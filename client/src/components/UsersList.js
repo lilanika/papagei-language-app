@@ -9,11 +9,28 @@ export default class UsersList extends Component {
     location: '',
     nativeLanguages: '',
     learningLanguages: '',
-    imageUrl: '',    
+    imageUrl: '',  
+    bgColor: [
+      'red',
+      'blue',
+      'yellow',
+    ],
+    selectedColor: '',  
   }
 
   componentDidMount(){
     this.getUsers()
+    this._getRandomColor()
+  }
+
+  _getRandomColor(){
+            var item = this.state.bgColor[Math.floor(Math.random()*this.state.bgColor.length) ];
+            this.setState({
+              selectedColor: item,
+            })
+
+        
+   
   }
   
   getUsers = async () => {
@@ -54,6 +71,7 @@ export default class UsersList extends Component {
     console.log(filteredUsers)
     return (
       <div className="max-width-userList"> 
+      
       
       <div class=" p-2 "> </div>
       <div className=" match">Find your match
@@ -117,8 +135,7 @@ export default class UsersList extends Component {
         
           return (
             
-              
-            <div className="  ">
+            <Link to={`/users/${user._id}`}  className=" linkwrapper"><div className="  ">
             <div className= "profile card-color" key={index}  >
           <img className="img-profile"
            
@@ -128,8 +145,10 @@ export default class UsersList extends Component {
             /*https://res.cloudinary.com/demo/image/upload/w_100,h_100,c_thumb,g_faces/couple.jpg */
           />
           <div>
-            <h2 className="my-1">{user.name}{user.age}</h2>
-            <p><i class="fas fa-map-marker-alt"></i> {user.location}</p>
+            <h2 className="my-1">{user.name} {user.age
+            }</h2>
+            <h3 className="location" ><i class="fas fa-map-marker-alt">
+            </i>{user.location}</h3>
             <p>{user.goal}</p>
             <div className ="card-buttons">
             <Link to={`/users/${user._id}`}  className="btn btn-dark my-2">View Profile</Link>
@@ -147,11 +166,16 @@ export default class UsersList extends Component {
             </i>Learns</p>
               <h3>{user.learningLanguages}</h3>   
             </li>
+            <li className="text-primary location-smart">
+            <p  className="grey "><i class="fas fa-map-marker-alt">
+            </i></p>
+              <h3>{user.location}</h3>   
+            </li>
           </ul>
           
         </div>
         </div>
-       
+       </Link>
         
             ) 
         })}

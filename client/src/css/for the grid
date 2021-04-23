@@ -1,0 +1,32 @@
+<div className="  ">
+            <div className= "profile card-color" key={index}  >
+          <img className="img-profile"
+           
+            src={user.imageUrl}
+            alt = ""
+            /*src={`https://res.cloudinary.com/demo/image/upload/w_200,h_200,c_fill,r_max/${user.imageUrl}`} */
+            /*https://res.cloudinary.com/demo/image/upload/w_100,h_100,c_thumb,g_faces/couple.jpg */
+          />
+          <div>
+            <h2 className="my-1">{user.name}, {user.age}</h2>
+            <h3> Age:{user.age}</h3>
+            <h3> Gender: {user.gender}</h3>
+            <h3> Location: {user.location}</h3>
+           
+            <Link to={`/users/${user._id}`}  className="btn btn-dark my-2">View Profile</Link>
+            <Link to={`/users/${user._id}/message`} className="btn btn-dark my-2 "> <i class="fas fa-paper-plane"></i></Link>
+          </div>
+          <ul>
+            <li className="text-primary">
+              <p className="grey"> <i class="far fa-comments text-secondary "></i>Speaks</p>
+              <h3>{user.nativeLanguages}</h3>
+            </li>
+            <li className="text-primary">
+            <p className="grey "><i class="fas fa-comments">
+            </i>Learns</p>
+              <h3>{user.learningLanguages}</h3>   
+            </li>
+          </ul>
+        </div>
+        </div>
+

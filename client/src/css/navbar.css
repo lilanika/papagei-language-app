@@ -1,0 +1,61 @@
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  /*border-bottom: solid 1px var(--primary-color);*/
+  /*logo: 0.9;*/
+   /*color:#f4f4f4; */
+  color:var(--dark-color);
+ /* background: linear-gradient(to right,#313B47,#00C8AA);*/
+
+ /*opacity: 0.9;*/
+
+}
+
+.navbar h1 {
+  color:white;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--light-color);
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+
+/* 
+
+font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 16.5px 14px;*/

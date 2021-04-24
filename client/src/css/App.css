@@ -99,6 +99,12 @@ img {
     object-position: top center;
 }
 
+.profile .img-profile {
+  height: 260px;
+  width: 260px !important;
+}
+
+
 /* Gridsystem */
  
 .grid-layout {
@@ -275,6 +281,21 @@ margin: 2rem 2rem 0 2rem;
   display: inline-flex;
   justify-content: space-around;
  padding: 0, 2rem;
+
+}
+
+
+.profile ul {
+  border-radius: 0 0rem 2rem 2rem;
+}
+
+
+.location-smart {
+  display: none;
+}
+
+.profile h3 {
+  padding: 0rem;
 }
 
 /* Mobile Styles */
@@ -289,7 +310,12 @@ margin: 2rem 2rem 0 2rem;
     max-width: 80%;
     margin: 0 auto; 
    }
-
+   
+   .profile ul {
+    border-radius: 0 0rem 2rem 2rem;
+    padding: 2rem;
+    flex-direction: row;
+   }
 
   /*
 .profile {
@@ -300,6 +326,11 @@ margin: 2rem 2rem 0 2rem;
  margin: 0 auto; 
  max-width: 1300px;
 }
+
+.location-smart {
+  display: block;
+}
+
 
 
 .grid-four {
@@ -343,9 +374,7 @@ margin: 2rem 2rem 0 2rem;
     grid-gap: 2rem;
     }
 
-  .img-profile { 
-      background-color: #056d5a;
-  }
+  
 
   .card-buttons {
     display: none;
@@ -360,9 +389,7 @@ margin: 2rem 2rem 0 2rem;
   }
 }
 
-.user-language {
-  display: inline-flex;
-}
+
 
 @media (min-width: 1380px) {
  
@@ -375,14 +402,14 @@ margin: 2rem 2rem 0 2rem;
     }
 
     .profile ul {
-  
       border-radius: 0 0rem 2rem 2rem;
       padding: 2rem;
+      flex-direction: row;
     }
     
     a:hover .profile ul {
       border-radius: 2rem rem;
-      /*background-color:#e6b141;*/
+      background-color:#e6b141;
     }
   
     .profile {
@@ -391,18 +418,18 @@ margin: 2rem 2rem 0 2rem;
       grid-gap: 1rem;
       padding: 0rem;
       border-radius: 2rem;
-    }
 
-   
-
-    a {
-      color:black;
     }
 
      .profile .img-profile{
       height: 290px;
       width: 290px !important;
     }
+
+    .location-smart {
+      display: block;
+    }
+    
   
   }
 
@@ -478,13 +505,10 @@ margin: 2rem 2rem 0 2rem;
     display: none;
   }
 
+ 
+
   /* Profiles Page */
-  .profile ul {
-    background-color: darkslateblue;
-    border-radius: 0 2rem;
-    padding: 1rem;
-    
-  }
+  
   
   a:hover .profile ul {
     border-radius: 2rem 0rem;
@@ -580,7 +604,19 @@ margin: 2rem 2rem 0 2rem;
     display:none;
   }
 
+  .profile ul {
+    background-color: darkslateblue;
+    border-radius: 0 2rem;
+    padding: 1rem;
+    flex-direction: row;
+    
+  }
+
+  .location-smart {
+    display: block;
+  }
   
+ 
 }
 
 

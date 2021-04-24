@@ -79,6 +79,10 @@
 .p-1-right {
   padding:  0 1rem 0 0 ;
 }
+
+.p-icons {
+  padding:  0 0.2rem 0 0 ;
+}
 .p-2 {
   padding: 2rem;
 }
@@ -246,7 +250,8 @@
 
 .bg-light,
 .badge-light {
-  border: rgb(228, 228, 228) solid 1px;
+  border: #fbfbfb;
+  border-radius: 2rem;
 }
 
 /* Forms */

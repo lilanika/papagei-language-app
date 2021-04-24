@@ -137,37 +137,36 @@ export default class UsersList extends Component {
             
             <Link to={`/users/${user._id}`}  className=" linkwrapper"><div className="  ">
             <div className= "profile card-color" key={index}  >
-          <img className="img-profile"
+          <img className="img-profile p-1"
            
             src={user.imageUrl}
             alt = ""
             /*src={`https://res.cloudinary.com/demo/image/upload/w_200,h_200,c_fill,r_max/${user.imageUrl}`} */
             /*https://res.cloudinary.com/demo/image/upload/w_100,h_100,c_thumb,g_faces/couple.jpg */
           />
-          <div>
+          <div className="p-1">
             <h2 className="my-1">{user.name} {user.age
             }</h2>
-            <h3 className="location" ><i class="fas fa-map-marker-alt">
-            </i>{user.location}</h3>
+            
             <p>{user.goal}</p>
             <div className ="card-buttons">
             <Link to={`/users/${user._id}`}  className="btn btn-dark my-2">View Profile</Link>
-            <Link to={`/users/${user._id}/message`} className="btn btn-dark my-2 "> <i class="fas fa-paper-plane"></i></Link>
+            <Link to={`/users/${user._id}/message`} className="btn btn-dark my-2 p-icons  "> <i class="fas fa-paper-plane"></i></Link>
             </div>
           </div>
          
           <ul>
             <li className="text-primary">
-              <p className="grey"> <i class="far fa-comments text-secondary "></i>Speaks</p>
+              <p className="grey"> <i class="far fa-comments text-secondary p-icons   "></i>Speaks</p>
               <h3>{user.nativeLanguages}</h3>
             </li>
             <li className="text-primary">
-            <p className="grey "><i class="fas fa-comments">
+            <p className="grey "><i class="fas fa-comments p-icons  ">
             </i>Learns</p>
               <h3>{user.learningLanguages}</h3>   
             </li>
-            <li className="text-primary location-smart">
-            <p  className="grey "><i class="fas fa-map-marker-alt">
+            <li className="text-primary location-smart ">
+            <p  className="grey "><i class="fas fa-map-marker-alt p-icons  ">
             </i></p>
               <h3>{user.location}</h3>   
             </li>

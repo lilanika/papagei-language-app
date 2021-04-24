@@ -42,7 +42,6 @@ border-color:var(--card-color);
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   
 }
 
@@ -54,6 +53,7 @@ body {
   background-color:  rgb(246, 246, 246);
   color: #333;
 }
+
 
 a {
   color: var(--light-color);
@@ -280,14 +280,11 @@ margin: 2rem 2rem 0 2rem;
 .profile ul {
   display: inline-flex;
   justify-content: space-around;
- padding: 0, 2rem;
-
-}
-
-
-.profile ul {
+  padding: 0, 2rem;
   border-radius: 0 0rem 2rem 2rem;
 }
+
+
 
 
 .location-smart {
@@ -365,6 +362,7 @@ margin: 2rem 2rem 0 2rem;
 .profile {
  grid-template-columns: 1fr;
  text-align: center;
+ grid-gap: 0rem;
  
   }
 
@@ -561,7 +559,8 @@ margin: 2rem 2rem 0 2rem;
   .profile img {
     width: 200px;
     margin:  auto;
-    margin-top:1rem;
+    margin-top:2.6rem;
+    padding: 0rem;
    
   }
 

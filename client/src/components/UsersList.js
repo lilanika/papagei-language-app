@@ -148,7 +148,7 @@ export default class UsersList extends Component {
             <h2 className="my-1">{user.name} {user.age
             }</h2>
             
-            <p>{user.goal}</p>
+           <p>{user.goal} </p>
             <div className ="card-buttons">
             <Link to={`/users/${user._id}`}  className="btn btn-dark my-2">View Profile</Link>
             <Link to={`/users/${user._id}/message`} className="btn btn-dark my-2 p-icons  "> <i class="fas fa-paper-plane"></i></Link>

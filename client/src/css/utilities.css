@@ -17,6 +17,21 @@
   margin: 3rem;
 }
 
+.flex-nowrap {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+}
+
+.grey-icon {
+  color:#e6dfdf;
+}
+
+
+
+
 .center { 
   justify-content: center;
   text-align: center;
@@ -83,6 +98,12 @@
 .p-icons {
   padding:  0 0.2rem 0 0 ;
 }
+
+.p-icons-settings {
+  padding:  0 0.5rem 0 0 ;
+}
+
+
 .p-2 {
   padding: 2rem;
 }
@@ -161,7 +182,7 @@
   
 }
 .btn-width {
-  width:150px;
+  width:170px;
 }
 
 /*

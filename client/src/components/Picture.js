@@ -94,38 +94,43 @@ class Picture extends Component {
       <div>
         <div>
           <Navbar />
-          <div className="max-width" >
+          <div className="max-width">
           <div className="grid-layout my-5 container">
-            <div className="grid-three bg-white p-2 ">
+            <div className=" grid-three bg-white p-2 ">
               <h2>
                 <i class="fas fa-user my-1"></i> Settings
               </h2>
               <ul className="flex-smart ">
                 <li>
-                  <Link to="/profile" className="btn my-1 btn-width">
-                    Profile
+                  <Link to="/profile" className="btn my-1 btn-width btn-smart">
+                    {" "}
+                    <i class="fas fa-cog p-icons-settings"></i> Settings 
                   </Link>
                 </li>
                 <li>
-                  <Link to="/languages" className="btn my-1 btn-width">
+                  <Link
+                    to="/languages"
+                    className="btn my-1 btn-width btn-smart"
+                  >
+                    <i class="fas fa-comments p-icons-settings"></i>
                     Languages
                   </Link>
                 </li>
                 <li>
-                  <Link to="/upload" className="btn my-1 btn-width ">
+                  <Link to="/upload" className="btn my-1 btn-width btn-smart ">
+                    <i class="fas fa-camera p-icons-settings"></i>
                     Picture
                   </Link>
                 </li>
                 <li>
-                  <li>
-                    <Link
-                      to="/"
-                      onClick={() => this.handleLogout()}
-                      className="btn my-1 btn-width"
-                    >
-                      Logout
-                    </Link>
-                  </li>
+                  <Link
+                    to="/"
+                    onClick={() => this.handleLogout()}
+                    className="btn my-1 btn-width btn-smart"
+                  >
+                    <i class="fas fa-sign-out-alt p-icons-settings"></i>
+                    Logout
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./layout/Navbar";
-import { signup } from "../services/auth";
 import axios from "axios";
 import { logout } from "../services/auth";
 //import UsersList from './UsersList'
@@ -63,46 +62,46 @@ export default class Profile extends Component {
     });
   };
 
-
-
   render() {
     return (
       <div>
         <Navbar />
         <div className="max-width">
           <div className="grid-layout my-5 container">
-            <div className=" grid-three bg-white p-2 ">
-              <ul className="flex-smart">
+          <div className="grid-three bg-white p-2 ">
+            <h2>
+                <i class="fas fa-user my-1"></i> Settings
+              </h2>
+              <ul className="flex-smart ">
                 <li>
-                  <Link to="/profile" className="btn my-1  btn-smart" title=" edit your profile">                
-                    <i class="fas fa-cog p-icons-settings"></i>        
+                  <Link to="/profile" className="btn my-1 btn-width">
+                  <i class="fas fa-cog p-icons-settings btn-width p-icons-settings"></i> 
+                    Profile
                   </Link>
                 </li>
                 <li>
-                  <Link
-                  title=" choose a languages"
-                    to="/languages"
-                    className="btn my-1 btn-smart"
-                  >
-                    <i class="fas fa-comments p-icons-settings"></i>                
-                  </Link>
-                </li>
-                <li>     
-                  <Link title="upload a picture" to="/upload" className="btn my-1  btn-smart ">
-                    <i class="fas fa-camera p-icons-settings"></i>
-                 
+                  <Link to="/languages" className="btn my-1 btn-width">
+                  <i class="fas fa-comments p-icons-settings btn-width p-icons-settings"></i>
+                    Languages
                   </Link>
                 </li>
                 <li>
-                  <Link
-                  title="logout"
-                    to="/"
-                    onClick={() => this.handleLogout()}
-                    className="btn my-1 btn-smart"
-                  >
-                    <i class="fas fa-sign-out-alt p-icons-settings"></i>
-                 
+                  <Link to="/upload" className="btn my-1 btn-width ">
+                  <i class="fas fa-camera p-icons-settings btn-width p-icons-settings"></i>
+                    Picture
                   </Link>
+                </li>
+                <li>
+                  <li>
+                    <Link
+                      to="/"
+                      onClick={() => this.handleLogout()}
+                      className="btn my-1 btn-width"
+                    >
+                     <i class="fas fa-sign-out-alt p-icons-settings btn-width p-icons-settings"></i>
+                      Logout
+                    </Link>
+                  </li>
                 </li>
               </ul>
             </div>
@@ -115,52 +114,77 @@ export default class Profile extends Component {
 
                 <form
                   className="form message-form  form-text"
-                  onSubmit={this.handleSubmit}
-                >
-                  <label className="grey " htmlFor="age ">
-                    <p>change your name</p>
-                  </label>
-                  <label htmlFor="name"></label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                    id="name"
-                  />
-                  <label className="grey" htmlFor="age ">
-                    <p>change your location</p>
-                  </label>
-                  <select
-                    name="location"
-                    id="location"
-                    form="carform"
-                    onChange={this.handleChange}
-                  >
-                    <option selected>{this.state.location}</option>
-                    <option value="Berlin">Berlin</option>
-                    <option value="Hamburg">Hamburg</option>
-                    <option value="Köln">Köln</option>
-                    <option value="Paris">Paris</option>
-                    <option value="Grenoble">Grenoble</option>
-                    <option value="London">London</option>
-                    <option value="Barcelona">Barcelona</option>
-                    <option value="Rome">Rome</option>
-                    <option value="Poznan">Poznan</option>
-                    <option value="Amsterdam">Amsterdam</option>
-                  </select>
+                  onSubmit={this.handleSubmit} >
 
-                  <label className="grey" htmlFor="age ">
-                    <p>Choose your age</p>
+
+                   
+                      <label className="grey " htmlFor="age ">
+                        <p> name</p>
+                      </label>
+                      <label htmlFor="name"></label>
+                      <input
+                        type="text"
+                        name="name"
+                        value={this.state.name}
+                        onChange={this.handleChange}
+                        id="name" 
+                        className="message-form-test"
+                        />
+                    
+
+                 
+                      <label className="grey" htmlFor="age ">
+                        <p>age</p>
+                      </label>
+                      <input
+                        type="number"
+                        name="age"
+                        value={this.state.age}
+                        onChange={this.handleChange}
+                        id="age"
+                        min="16"
+                        max="100"
+                        className="message-form-test"
+                      />
+                 
+
+              
+                      <label className="grey" htmlFor="age ">
+                        <p>location</p>
+                      </label>
+                      <select
+                        name="location"
+                        id="location"
+                        form="carform"
+                        className="message-form-test"
+                        onChange={this.handleChange}>
+                        <option selected>{this.state.location}</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="Hamburg">Hamburg</option>
+                        <option value="Köln">Köln</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Grenoble">Grenoble</option>
+                        <option value="London">London</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Poznan">Poznan</option>
+                        <option value="Amsterdam">Amsterdam</option>
+                      </select>
+               
+                 
+                
+         
+
+                  <label htmlFor="goal" className="grey">
+                    Edit your learning Goals
                   </label>
-                  <input
-                    type="number"
-                    name="age"
-                    value={this.state.age}
+                  <textarea
+                    type="text"
+                    rows="5"
+                    cols="30"
+                    name="goal"
+                    value={this.state.goal}
                     onChange={this.handleChange}
-                    id="age"
-                    min="16"
-                    max="100"
                   />
 
                   <label className="grey" htmlFor="goal">
@@ -175,29 +199,20 @@ export default class Profile extends Component {
                     onChange={this.handleChange}
                     id="description"
                   />
-                  <label htmlFor="goal" className="grey">
-                    Edit your learning Goals
-                  </label>
-                  <textarea
-                    type="text"
-                    rows="5"
-                    cols="30"
-                    name="goal"
-                    value={this.state.goal}
-                    onChange={this.handleChange}
-                  />
-                  <div className="flex-nowrap">
-                  <Link
-                    to={`/users/${this.props.user._id}`}
-                    className="btn btn-dark p-4"
-                  >   <h3>view profile</h3>
-              
-                  </Link>
-                  <button className="btn btn-primary m-3" type="submit">
-                    <h3>submit changes</h3>
-                  </button>
+                 
+                  <div className="">
+                    <Link
+                      to={`/users/${this.props.user._id}`}
+                      className="btn btn-dark p-4"
+                    >
+                      {" "}
+                      <h3>view profile</h3>
+                    </Link>
+                    <button className="btn btn-primary m-3" type="submit">
+                      <h3>submit changes </h3>
+                    </button>
 
-                  {this.state.message && <h3>{this.state.message}</h3>}
+                    {this.state.message && <h3>{this.state.message}</h3>}
                   </div>
                 </form>
               </div>

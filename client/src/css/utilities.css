@@ -17,9 +17,9 @@
   margin: 3rem;
 }
 
+
 .flex-nowrap {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   margin: 3rem;
@@ -29,6 +29,10 @@
   color:#e6dfdf;
 }
 
+
+.display-inline {
+  display:inline-block; 
+}
 
 
 
@@ -99,9 +103,7 @@
   padding:  0 0.2rem 0 0 ;
 }
 
-.p-icons-settings {
-  padding:  0 0.5rem 0 0 ;
-}
+
 
 
 .p-2 {
@@ -297,7 +299,7 @@
   width: 100%;
   padding: 0.4rem;
   padding-left:0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border:  1px solid #ccc;
   transform: capitalize;
   border-radius:0.5rem;

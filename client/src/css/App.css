@@ -7,9 +7,9 @@
  /*--primary-color:linear-gradient(to right,#313B47,#00C8AA);*/
   --dark-color:  #056d5a;
   --dark-color:  #192534;
-  --grey-color: #f4f4f4;
+  --grey-color: #f5f7fa;
   --light-color: white;
-  --card-color: #f4f4f4;
+  --card-color: #f5f7fa;
   --danger-color: #dc3545;
   --success-color: #28a745;
   --orange-color:  #056d5a;
@@ -52,6 +52,7 @@ body {
   background-color: rgb(252, 247, 247); 
   background-color:  rgb(246, 246, 246);
   color: #333;
+   
 }
 
 
@@ -224,6 +225,7 @@ margin: 2rem 2rem 0 2rem;
   padding: 0 3rem;
 }
 
+
 /* show Profile --> goals */ 
 .grid-two {
   grid-area: two;
@@ -251,7 +253,7 @@ margin: 2rem 2rem 0 2rem;
 
 .grid-four {
   grid-area: four;
-  border-radius: 0.5rem; 
+  border-radius: 0.5rem;     
 }
 
 .grid-three h2,
@@ -295,6 +297,13 @@ margin: 2rem 2rem 0 2rem;
   padding: 0rem;
 }
 
+
+
+.p-icons-settings {
+  padding:  0 0.5rem 0 0 ;
+  display: inline;
+}
+
 /* Mobile Styles */
 
 
@@ -302,17 +311,35 @@ margin: 2rem 2rem 0 2rem;
   .container {
     margin-top: 8rem;
   }
+  .flexbox-settings-Large-Screen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    }
+
+
+    
+
 
   .max-width-userList {
     max-width: 80%;
     margin: 0 auto; 
    }
-   
+
+
    .profile ul {
     border-radius: 0 0rem 2rem 2rem;
     padding: 2rem;
     flex-direction: row;
-   }
+  }
+  
+  a:hover .profile ul {
+    border-radius: 2rem ;
+    background-color: darkslateblue;
+    border-radius: 2rem 0rem;
+  }
 
   /*
 .profile {
@@ -359,11 +386,12 @@ margin: 2rem 2rem 0 2rem;
   border-width: 3cm;
   }
 
-.profile {
- grid-template-columns: 1fr;
- text-align: center;
- grid-gap: 0rem;
- 
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 1.5rem;
+    padding: 0rem;
+    border-radius: 2rem;
   }
 
 .filter {
@@ -406,8 +434,9 @@ margin: 2rem 2rem 0 2rem;
     }
     
     a:hover .profile ul {
-      border-radius: 2rem rem;
-      background-color:#e6b141;
+      border-radius: 2rem ;
+      background-color: darkslateblue;
+      border-radius: 2rem 0rem;
     }
   
     .profile {
@@ -508,10 +537,7 @@ margin: 2rem 2rem 0 2rem;
   /* Profiles Page */
   
   
-  a:hover .profile ul {
-    border-radius: 2rem 0rem;
-    /*background-color:#e6b141;*/
-  }
+
 
   .profile {
     grid-template-columns: 1fr;
@@ -609,6 +635,11 @@ margin: 2rem 2rem 0 2rem;
     padding: 1rem;
     flex-direction: row;
     
+  }
+
+  a:hover .profile ul {
+    border-radius: 2rem 0rem;
+    /*background-color:#e6b141;*/
   }
 
   .location-smart {

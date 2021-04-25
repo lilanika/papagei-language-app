@@ -30,3 +30,47 @@
         </div>
         </div>
 
+
+
+           <div className=" grid-three bg-white p-2 ">
+              <ul className="flex-smart">
+                <li>
+                  <Link
+                    to="/profile"
+                    className="btn my-1  btn-smart"
+                    title=" edit your profile"
+                  >
+                    <i class="fas fa-cog p-icons-settings btn-width">profile</i> 
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    title=" choose a languages"
+                    to="/languages"
+                    className="btn my-1 btn-smart"
+                  >
+                    <i class="fas fa-comments p-icons-settings btn-width"></i> 
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    title="upload a picture"
+                    to="/upload"
+                    className="btn my-1  btn-smart "
+                  >
+                    <i class="fas fa-camera p-icons-settings btn-width"></i> picture
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    title="logout"
+                    to="/"
+                    onClick={() => this.handleLogout()}
+                    className="btn my-1 btn-smart"
+                  >
+                    <i class="fas fa-sign-out-alt p-icons-settings btn-width"></i>logout
+                  </Link>
+                </li>
+              </ul>
+            </div>
+

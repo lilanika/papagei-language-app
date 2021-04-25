@@ -150,23 +150,23 @@ export default class UsersList extends Component {
             
            <p>{user.goal} </p>
             <div className ="card-buttons">
-            <Link to={`/users/${user._id}`}  className="btn btn-dark my-2">View Profile</Link>
+            <Link to={`/users/${user._id}`}  className="btn btn-dark my-2">view</Link>
             <Link to={`/users/${user._id}/message`} className="btn btn-dark my-2 p-icons  "> <i class="fas fa-paper-plane"></i></Link>
             </div>
           </div>
          
           <ul>
             <li className="text-primary">
-              <p className="grey"> <i class="far fa-comments text-secondary p-icons   "></i>Speaks</p>
+              <p className="grey"> <i class="far fa-comments text-secondary p-icons   "></i>speaks</p>
               <h3>{user.nativeLanguages}</h3>
             </li>
             <li className="text-primary">
-            <p className="grey "><i class="fas fa-comments p-icons  ">
-            </i>Learns</p>
+            <p className="grey "><i class="fas fa-comments text-secondary p-icons  ">
+            </i>learns</p>
               <h3>{user.learningLanguages}</h3>   
             </li>
             <li className="text-primary location-smart ">
-            <p  className="grey "><i class="fas fa-map-marker-alt p-icons  ">
+            <p  className="grey "><i class=" fas fa-map-marked-alt p-icons text-secondary  ">
             </i></p>
               <h3>{user.location}</h3>   
             </li>

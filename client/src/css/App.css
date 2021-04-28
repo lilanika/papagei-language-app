@@ -26,6 +26,7 @@ border-color:var(--card-color);
 .match{
   text-align: center;
   padding: 2rem;
+  margin-top:4rem;
   font-weight: bold;
   font-size: 3rem;
 }
@@ -647,9 +648,7 @@ margin: 2rem 2rem 0 2rem;
   }
   
 
-  .start  {
-    display:none;
-   }
+  
  
 }
 

@@ -5,21 +5,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2.5rem;
+  padding: 2rem 2.5rem;
   position: absolute;
   z-index: 1;
   width: 100%;
   top: 0;
   background-color:var(--card-color);
-
-  /*border-bottom: solid 1px var(--primary-color);*/
-  /*logo: 0.9;*/
-   /*color:#f4f4f4; */
-  /*color:var(--dark-color);*/
- /* background: linear-gradient(to right,#313B47,#00C8AA);*/
-
- /*opacity: 0.9;*/
-
 }
 
 
@@ -32,28 +23,25 @@
 .navbar ul {
   display: flex;
   justify-content: space-between;
-  color: var(--primary-color);
+ 
 }
-
-
-
 
 .start  {
  margin:auto 0;
  padding: 0 1rem;
 }
 
+
 /*icons*/ 
  nav i {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--primary-color);
 }
 
 .msg i {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--primary-color);
-  padding:1rem
-
+  padding: 0.7rem;
 }
 
 .navbar a {
@@ -62,42 +50,80 @@
   margin: 0 0.25rem;
 }
 
-.navbar a:hover {
+
+.msg:hover,
+.profile-i:hover {
+    transform: translateY(-3px);
+}
+
+.msg:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.start:hover{
   color: var(--primary-color);
+}
+
+
+/*
+
+.msg:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
 }
 
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
-
-
-/* 
-
-font: inherit;
-    letter-spacing: inherit;
-    color: currentcolor;
-    border: 0px;
-    box-sizing: content-box;
-    background: none;
-    height: 1.4375em;
-    margin: 0px;
-    -webkit-tap-highlight-color: transparent;
-    display: block;
-    min-width: 0px;
-    width: 100%;
-    animation-name: mui-auto-fill-cancel;
-    animation-duration: 10ms;
-    padding: 16.5px 14px;*/
+*/ 
 
 
   .bg-blue {
-    background-color: var(--card-color);
     border-radius: 10rem;
     padding:0.2rem;
     background-color: var(--dark-color);
   }
 
  
+ 
+  @media (max-width: 700px) {
+    .start  {
+      display:none;
+     }
+
+     nav i {
+      font-size: 2.8rem;
+      color: var(--primary-color);
+    }
+    
+    .msg i {
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      padding: 0.7rem;
+    }
+
+    
+    
+  }
   
 
 

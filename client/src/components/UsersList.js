@@ -71,7 +71,8 @@ export default class UsersList extends Component {
     console.log(filteredUsers)
     return (
       <div className="max-width-userList"> 
-      
+
+ 
       
       <div class=" p-2 "> </div>
       <div className=" match">Find your match
@@ -136,7 +137,7 @@ export default class UsersList extends Component {
           return (
             
             <Link to={`/users/${user._id}`}  className=" linkwrapper"><div className="  ">
-            <div className= "profile card-color" key={index}  >
+            <div className= "profile card-color " key={index}  >
           <img className="img-profile p-1"
            
             src={user.imageUrl}
@@ -157,7 +158,7 @@ export default class UsersList extends Component {
          
           <ul>
             <li className="text-primary">
-              <p className="grey"> <i class="far fa-comments text-secondary p-icons   "></i>speaks</p>
+              <p className="grey"> <i class="far fa-comments text-secondary p-icons "></i>speaks</p>
               <h3>{user.nativeLanguages}</h3>
             </li>
             <li className="text-primary">
@@ -175,6 +176,8 @@ export default class UsersList extends Component {
         </div>
         </div>
        </Link>
+
+      
         
             ) 
         })}

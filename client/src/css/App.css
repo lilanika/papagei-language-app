@@ -6,7 +6,7 @@
 
  /*--primary-color:linear-gradient(to right,#313B47,#00C8AA);*/
   --dark-color:  #056d5a;
-  --dark-color:  #192534;
+  --dark-color:  #221e41;;
   --grey-color: #f5f7fa;
   --light-color: white;
   --card-color: #f5f7fa;
@@ -32,7 +32,7 @@ border-color:var(--card-color);
 
 
 .box {
-  background-color: #444;
+  background-color: #221e41;;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -51,14 +51,14 @@ body {
   line-height: 1.6;
   background-color: rgb(252, 247, 247); 
   background-color:  rgb(246, 246, 246);
-  color: #333;
+  color: #221e41;;
    
 }
 
 
 a {
   color: var(--light-color);
-  color:black;
+  color:#221e41;;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bolder;
@@ -190,7 +190,6 @@ margin: 2rem 2rem 0 2rem;
   align-items: center;
   justify-content: center;
   grid-gap: 1rem;
-  
 }
 
 .grid-one img {
@@ -212,6 +211,7 @@ margin: 2rem 2rem 0 2rem;
 }
 
 
+ 
 
 /* MessageForm & Container*/ 
 .message-form {
@@ -646,6 +646,10 @@ margin: 2rem 2rem 0 2rem;
     display: block;
   }
   
+
+  .start  {
+    display:none;
+   }
  
 }
 

@@ -8,7 +8,7 @@ import { Route, Redirect } from 'react-router-dom';
 import LandingPage from './components/LandingPage'
 import Signup from './components/Signup';
 import Login from './components/Login';
-import ProtectedRoute from './components/ProtectedRoute';
+
 import HomePage from './components/HomePage';
 import Profile from './components/Profile';
 import Languages from './components/Languages';

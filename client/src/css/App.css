@@ -25,7 +25,7 @@ border-color:var(--card-color);
 }
 .match{
   text-align: center;
-  padding: 2rem;
+  padding: 4rem;
   margin-top:4rem;
   font-weight: bold;
   font-size: 3rem;
@@ -457,11 +457,15 @@ margin: 2rem 2rem 0 2rem;
     .location-smart {
       display: block;
     }
+
+    .navbar a:hover {
+      color:burlywood;
+    }
     
   
   }
 
-@media (max-width: 700px) {
+@media (max-width: 816px) {
   .container {
     margin-top: 8rem;
   }
@@ -525,9 +529,7 @@ margin: 2rem 2rem 0 2rem;
     justify-content: center;
   }
 
-  .navbar h1 {
-    margin-bottom: 1rem;
-  }
+  
 
   .navbar .welcome {
     display: none;

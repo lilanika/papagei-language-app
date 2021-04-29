@@ -4,7 +4,8 @@
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
-  padding: 0 2rem;
+
+  padding: 2rem 2rem;
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
@@ -264,7 +265,7 @@
 .alert-white {
   background: #fff;
   color: #333;
-  border: rgb(228, 228, 228) solid 1px; 
+ /* border: rgb(228, 228, 228) solid 1px; */
 }
 
 .btn:hover {

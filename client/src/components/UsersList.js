@@ -10,28 +10,15 @@ export default class UsersList extends Component {
     nativeLanguages: '',
     learningLanguages: '',
     imageUrl: '',  
-    bgColor: [
-      'red',
-      'blue',
-      'yellow',
-    ],
-    selectedColor: '',  
+    
   }
 
   componentDidMount(){
     this.getUsers()
-    this._getRandomColor()
-  }
-
-  _getRandomColor(){
-            var item = this.state.bgColor[Math.floor(Math.random()*this.state.bgColor.length) ];
-            this.setState({
-              selectedColor: item,
-            })
-
-        
    
   }
+
+ 
   
   getUsers = async () => {
     //console.log("route triggered to fget users")

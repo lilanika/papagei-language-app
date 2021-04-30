@@ -210,7 +210,7 @@ export default class Profile extends Component {
                       <h3>view profile</h3>
                     </Link>
                     
-                    <button className="btn btn-primary m-3" type="submit">
+                    <button className="btn btn-primary m-3 focus" type="submit">
                       <h3>save changes </h3>
                     </button>
 

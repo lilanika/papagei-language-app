@@ -152,7 +152,7 @@ class Picture extends Component {
                     name="iage"
                     onChange={(e) => this.handleFileUpload(e)}
                   />
-                  <button className="btn btn-primary m-3" type="submit">
+                  <button className="btn btn-primary m-3 focus" type="submit">
                     <h3>save changes</h3>
                   </button>
                 </form>

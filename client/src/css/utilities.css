@@ -272,7 +272,7 @@
   opacity: 0.8;
 }
 
-button:focus {
+.focus:focus {
   background-color: var(--dark-color)
 }
 

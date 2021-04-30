@@ -2,18 +2,20 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../layout/Navbar";
 import axios from "axios";
-import UsersList from "../UsersList";
-//import UsersList from './UsersList'
+
 
 export default class MessagesContainer extends Component {
   state = {
     messages: [],
     recipientIdforConversation: null,
     reply: "",
+
   };
   componentDidMount() {
     this.getData();
   }
+
+
   getData = () => {
     const id = this.props.user._id;
     console.log("SENDER", id);
@@ -92,7 +94,7 @@ export default class MessagesContainer extends Component {
         <div>
           <div key={message._id}>
             <button
-              className="btn my-1 btn-width"
+              className="btn my-1 btn-width "
               value={message._id}
               onClick={this.handleClick}>
               {message.name}
@@ -103,9 +105,9 @@ export default class MessagesContainer extends Component {
     });
     const displayMessages = filtered.map((message) => {
       return (
-        <div className="p">
-          <p className="text-dark">
-            <b>{message.sender.name}</b>
+        <div className="p" >
+          <p className="text-dark" >
+            <b>{message.sender.name} </b>
           </p>
           <p>{message.content}</p>
           <div class="line-light"></div>
@@ -117,6 +119,7 @@ export default class MessagesContainer extends Component {
       return (
         <div>
           <Navbar />
+          <div class="max-width"> 
           <div className="grid-layout my-5 container">
             <div className="grid-three bg-white p-2 ">
               <h2>
@@ -129,7 +132,7 @@ export default class MessagesContainer extends Component {
             <section className=" grid-four bg-white">
 
               <div className="form-group">
-                <h2 class="large text-primary center p-2 ">messages</h2>
+                <h2 class="large text-primary center p-2 "> messages</h2>
                 <div className=" p-2 btn-light flexbox border">
                   <p>{displayMessages}</p>
                 </div>
@@ -149,13 +152,15 @@ export default class MessagesContainer extends Component {
                     id="reply"
                     placeholder="Write you message here"
                   />
-                  <button className="btn btn-primary m-2" type="submit">
+                  <button className="btn btn-primary m-2 focus" type="submit">
                     <h3>Send message </h3>
                   </button>
                 </form>
               </div>
             </section>
           </div>
+          </div>
+        
         </div>
       );
     } else {
@@ -163,7 +168,7 @@ export default class MessagesContainer extends Component {
         <div>
         
           <Navbar />
-
+          <div class="max-width">  
           <div className="grid-layout my-5 container">
             <div className="grid-three bg-white p-2 ">
               <h2>
@@ -183,6 +188,8 @@ export default class MessagesContainer extends Component {
               </div>
             </section>
           </div>
+          </div>
+         
         </div>
       );
     }

@@ -136,7 +136,7 @@ export default class Languages extends Component {
                   <option value="Polish">Polish</option>
                   <option value="Portuguese">Portuguese</option>
                 </select>
-                <button className="btn btn-primary m-3" type="submit">
+                <button className="btn btn-primary m-3 focus" type="submit">
                   <h3>Submit changes </h3>
                 </button>
                 {this.state.message && <h3>{this.state.message}</h3>}

@@ -24,11 +24,9 @@ nav img {
 
 
 .navbar h1 {
-color:rgb(203, 212, 221);
-font-size: 1.7rem;
-text-transform: uppercase;
-
-
+/*color:rgb(203, 212, 221)*/
+font-size: 1.4rem;
+/*text-transform: uppercase;*/
 }
 
 
@@ -38,7 +36,7 @@ text-transform: uppercase;
  
 }
 
-.start  {
+.start {
  margin:auto 0;
  padding: 0 1rem;
 color:rgb(230, 218, 218);

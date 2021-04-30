@@ -4,6 +4,7 @@ import { logout } from "../services/auth";
 // components/AddThing.js
 import React, { Component } from "react";
 import axios from "axios";
+import Footer from './layout/Footer'
 
 // import the service file since we need it to send (and get) the data to(from) server
 import service from "../api/service";
@@ -155,7 +156,9 @@ class Picture extends Component {
             </section>
           </div>
         </div>
+        <Footer/>
       </div>
+  
       </div>
     );
   }

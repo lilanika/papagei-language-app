@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import logo from './parrot.png';
+//import logo from './parrot.png';
 
-console.log(logo)
+//console.log(logo)
 // import { Link } from 'react-router-dom'
 // import { logout } from '../services/auth';
 
@@ -23,12 +23,13 @@ const Navbar = (props) => {
   return (
     <nav className="navbar">
     <ul>
-    <Link to="/"><h1>Papagei</h1></Link>
-  
-    
+   
+    <img 
+     className=" img-smart round-img png margin-y"
+     src="https://img.icons8.com/color/48/000000/parrot.png"
+    alt=""
+    /> <Link to="/"><h1>Papagei</h1></Link>
 
-
-  
     </ul>
       <ul class="nav">
         <li class="start"><Link to="/">Start </Link></li>

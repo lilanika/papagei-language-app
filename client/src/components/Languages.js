@@ -4,6 +4,7 @@ import Navbar from "./layout/Navbar";
 import { signup } from "../services/auth";
 import axios from "axios";
 import { logout } from "../services/auth";
+import Footer from './layout/Footer'
 
 export default class Languages extends Component {
   state = {
@@ -139,6 +140,7 @@ export default class Languages extends Component {
             </div>
           </section>
         </div>
+      
         </div>
       </div>
     );

@@ -5,6 +5,7 @@ import Footer from './layout/Footer'
 
 
 
+
 export default class HomePage extends Component {
 
 
@@ -15,6 +16,8 @@ export default class HomePage extends Component {
         <Navbar/>
         <UsersList {...this.props}/>
         <Footer/>
+      
+       
       </div>
     )
   }

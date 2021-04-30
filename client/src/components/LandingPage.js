@@ -6,6 +6,7 @@ import { logout } from '../services/auth';
 
 
 
+
 const handleLogout = props => {
   logout().then(() => {
     props.setUser(null)
@@ -21,7 +22,7 @@ export default function LandingPage(props) {
         {props.user ? (
           <>
             <li>
-              <Link to="/" onClick={() => handleLogout(props)}>
+              <Link to="/profile" onClick={() => handleLogout(props)}>
                 Logout
               </Link>
             </li>
@@ -54,6 +55,7 @@ export default function LandingPage(props) {
                     Login
                   </Link>
                 </li>
+
 
               </ul>
             </nav>

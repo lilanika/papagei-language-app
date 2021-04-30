@@ -56,6 +56,46 @@ body {
    
 }
 
+.footer p,
+.footer a {
+  color:grey;
+  font-weight: 100;
+  padding:0.2rem;
+  align-items: center;
+  font-size: 0.7rem;
+  margin:auto;
+  text-align: center;
+
+  
+}
+
+.grid-container{
+  display:grid;
+grid-template-columns: repeat( 2, 1fr) ;
+  height:100vh;
+  padding:2rem;
+}
+
+.grid-container h1 {
+  position: absolulte;
+  margin: 5rem;
+}
+.grid-element{
+  background-color: rgb(246, 246, 246);
+  text-align:center;
+  padding:20px;
+}
+.grid-element-one{
+ 
+  background-color:#F3CE00;
+  text-align:center;
+  padding:20px;
+}
+
+.grid-container img  {
+  width:100px;
+  height:100px;
+}
 
 a {
   color: var(--light-color);
@@ -174,6 +214,7 @@ margin: 2rem 2rem 0 2rem;
 
 
 /* UserList.js --> für den Abstand  */
+
 
 .grid-one {
   grid-area: one;
@@ -373,6 +414,10 @@ margin: 2rem 2rem 0 2rem;
     width: 200px;
     margin: auto;
     margin-top:1rem;
+  }
+
+  .match{
+    padding: 2rem;
   }
   
 

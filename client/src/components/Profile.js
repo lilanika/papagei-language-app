@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./layout/Navbar";
 import axios from "axios";
 import { logout } from "../services/auth";
+import Footer from './layout/Footer'
 //import UsersList from './UsersList'
 
 export default class Profile extends Component {
@@ -217,8 +218,12 @@ export default class Profile extends Component {
                 </form>
               </div>
             </section>
+           
           </div>
+          <Footer>
+        </Footer>
         </div>
+       
       </div>
     );
   }

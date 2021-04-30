@@ -12,7 +12,10 @@ import {Link} from 'react-router-dom'
 const Footer = (props) => {
   
   return (
-   <div></div>
+   <div className=" flexbox footer ">
+    <p>Built and designed by<Link><i class="fab fa-github"></i> lilanika</Link> &<Link><i class="fab fa-github"></i> orianemgn </Link>during Ironhacks bootcamp</p>
+
+</div>
   )
 }
 

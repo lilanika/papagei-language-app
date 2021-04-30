@@ -107,9 +107,9 @@ export default class Profile extends Component {
               </ul>
             </div>
 
-            <section className="grid-four bg-white p-2">
+            <section className="grid-four bg-white p-2 ">
               <div className="form-group  ">
-                <h2 class="large text-primary center p-3 ">
+                <h2 class="large text-primary center p-3  ">
                   Edit Profile
                 </h2>
 
@@ -177,7 +177,7 @@ export default class Profile extends Component {
          
 
                   <label htmlFor="goal" className="grey">
-                    Edit your learning Goals
+                    learning Goals
                   </label>
                   <textarea
                     type="text"
@@ -201,7 +201,7 @@ export default class Profile extends Component {
                     id="description"
                   />
                  
-                  <div className="">
+                  <div className="btn-360 m-2">
                     <Link
                       to={`/users/${this.props.user._id}`}
                       className="btn btn-dark p-4"
@@ -210,7 +210,7 @@ export default class Profile extends Component {
                       <h3>view profile</h3>
                     </Link>
                     
-                    <button className="btn btn-primary m-3 focus" type="submit">
+                    <button className="btn btn-primary my-3 focus" type="submit">
                       <h3>save changes </h3>
                     </button>
 

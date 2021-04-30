@@ -104,7 +104,7 @@ export default class MessageForm extends Component {
                       id="content"
                       placeholder="Write you message here"
                     />
-                    <button className="btn btn-primary m-2 focus" type="submit">
+                    <button className="btn btn-primary my-2 focus" type="submit">
                       <h3>Send message </h3>
                     </button>
                     {this.state.message && <h3>{this.state.message}</h3>}

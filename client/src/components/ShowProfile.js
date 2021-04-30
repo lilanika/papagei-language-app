@@ -68,22 +68,22 @@ export default class ShowProfile extends Component {
 
             <div class="grid-three bg-white p-2">
               <h2 class="text-dark"> {this.state.user.name} Speaks </h2>
-              <h3>{this.props.user.nativeLanguages} </h3>
-              <div></div>
+              <h3> {this.props.user.nativeLanguages} </h3>
+              <div class="line"></div>
               <h2 class="text-dark">{this.state.user.name} Learns </h2>
               <h3>{this.props.user.learningLanguages}</h3>
             </div>
 
             <div class="grid-four bg-white p-2">
-              <h3> About {this.state.user.name}</h3>
-              <p> {this.state.user.age} years old </p>
-              <p>
+              <h3 class="p" > About {this.state.user.name}</h3>
+              <p class="p"> {this.state.user.age} years old </p>
+              <p class="p">
                 <strong>Description: </strong>
                 {this.state.user.description}
               </p>
             </div>
 
-            <div class="grid-two  bg-light p-2">
+            <div class="grid-two bg-light p-2">
               <h2 class="text-primary ">Goals</h2>
               <p> {this.state.user.goal}</p>
               <div class="line"></div>

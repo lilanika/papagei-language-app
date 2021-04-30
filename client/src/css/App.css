@@ -65,8 +65,6 @@ body {
   font-size: 0.7rem;
   margin:auto;
   text-align: center;
-
-  
 }
 
 .grid-container{
@@ -263,7 +261,7 @@ margin: 2rem 2rem 0 2rem;
   align-items: center;
   justify-content: center;
   text-align: center;
-  grid-gap: 0.5rem;
+  grid-gap: 0.5rem; 
   padding: 0 3rem;
 }
 
@@ -303,23 +301,27 @@ margin: 2rem 2rem 0 2rem;
   margin-bottom: 1rem;
 }
 
+/*
 .grid-three > div,
 .grid-four > div {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: #ccc 1px dotted;
 }
+*/ 
 
 .grid-three > div:last-child,
 .grid-four > div:last-child {
   border: 0;
 }
 
+/*
 .grid-three p,
 .grid-four p {
   margin: 0.5rem 0;
 }
  
+*/ 
 
 .profile ul {
   display: inline-flex;

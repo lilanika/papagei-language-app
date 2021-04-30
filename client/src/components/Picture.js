@@ -96,23 +96,26 @@ class Picture extends Component {
           <Navbar />
           <div className="max-width" >
           <div className="grid-layout my-5 container">
-            <div className="grid-three bg-white p-2 ">
-              <h2>
+          <div className="grid-three bg-white p-2 ">
+            <h2>
                 <i class="fas fa-user my-1"></i> Settings
               </h2>
               <ul className="flex-smart ">
                 <li>
                   <Link to="/profile" className="btn my-1 btn-width">
+                  <i class="fas fa-cog p-icons-settings btn-width p-icons-settings"></i> 
                     Profile
                   </Link>
                 </li>
                 <li>
                   <Link to="/languages" className="btn my-1 btn-width">
+                  <i class="fas fa-comments p-icons-settings btn-width p-icons-settings"></i>
                     Languages
                   </Link>
                 </li>
                 <li>
                   <Link to="/upload" className="btn my-1 btn-width ">
+                  <i class="fas fa-camera p-icons-settings btn-width p-icons-settings"></i>
                     Picture
                   </Link>
                 </li>
@@ -123,6 +126,7 @@ class Picture extends Component {
                       onClick={() => this.handleLogout()}
                       className="btn my-1 btn-width"
                     >
+                     <i class="fas fa-sign-out-alt p-icons-settings btn-width p-icons-settings"></i>
                       Logout
                     </Link>
                   </li>
@@ -133,7 +137,7 @@ class Picture extends Component {
             <section className=" grid-four bg-white">
               <div className="form-group">
                 <h2 class="large text-primary center p-2 ">
-                  Upload your Picture
+                  Upload Picture
                 </h2>
                 <form className="form message-form ">
                   <img
@@ -149,7 +153,7 @@ class Picture extends Component {
                     onChange={(e) => this.handleFileUpload(e)}
                   />
                   <button className="btn btn-primary m-3" type="submit">
-                    <h3>Submit changes</h3>
+                    <h3>save changes</h3>
                   </button>
                 </form>
               </div>

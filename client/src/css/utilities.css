@@ -272,6 +272,10 @@
   opacity: 0.8;
 }
 
+button:focus {
+  background-color: var(--dark-color)
+}
+
 .bg-light,
 .badge-light {
   border: #fbfbfb;
@@ -283,6 +287,11 @@
   margin: 1.2rem 10rem;
 }
 
+.form p, 
+.grey {
+  font-size: 0.8rem;
+  margin-top:0.5rem;
+}
 
 .form .form-text {
   display: block;

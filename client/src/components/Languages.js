@@ -51,44 +51,48 @@ export default class Languages extends Component {
         <div className="grid-layout my-5 container">
           <div className="grid-three bg-white p-2 ">
             <h2>
-              <i class="fas fa-user my-1"></i> Settings
-            </h2>
-            <ul className="flex-smart ">
-              <li>
-                <Link to="/profile" className="btn my-1 btn-width">
-                  Profile
-                </Link>
-              </li>
-              <li>
-                <Link to="/languages" className="btn my-1 btn-width">
-                  Languages
-                </Link>
-              </li>
-              <li>
-                <Link to="/upload" className="btn my-1 btn-width ">
-                  Picture
-                </Link>
-              </li>
-              <li>
-           
-                <Link
-                  to="/"
-                  onClick={() => this.handleLogout()}
-                  className="btn my-1 btn-width"
-                >
-                  Logout
-                </Link>
-              </li>
-            </ul>
-          </div>
-
+                <i class="fas fa-user my-1"></i> Settings
+              </h2>
+              <ul className="flex-smart ">
+                <li>
+                  <Link to="/profile" className="btn my-1 btn-width">
+                  <i class="fas fa-cog p-icons-settings btn-width p-icons-settings"></i> 
+                    Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/languages" className="btn my-1 btn-width">
+                  <i class="fas fa-comments p-icons-settings btn-width p-icons-settings"></i>
+                    Languages
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/upload" className="btn my-1 btn-width ">
+                  <i class="fas fa-camera p-icons-settings btn-width p-icons-settings"></i>
+                    Picture
+                  </Link>
+                </li>
+                <li>
+                  <li>
+                    <Link
+                      to="/"
+                      onClick={() => this.handleLogout()}
+                      className="btn my-1 btn-width"
+                    >
+                     <i class="fas fa-sign-out-alt p-icons-settings btn-width p-icons-settings"></i>
+                      Logout
+                    </Link>
+                  </li>
+                </li>
+              </ul>
+            </div>
           <section className=" grid-four bg-white p-2">
             <div className="form-group form-text">
-              <h3 class="large text-primary center p-3">Edit your Languages</h3>
+              <h3 class="large text-primary center p-3">Edit Languages</h3>
 
               <form className="form message-form form-text" onSubmit={this.handleSubmit}>
                 <label className="grey" htmlFor="goal">
-                  Choose your native Language
+                  native Language
                 </label>
 
                 <select
@@ -111,7 +115,7 @@ export default class Languages extends Component {
                 </select>
 
                 <label className="grey" htmlFor="goal">
-                  Choose your learning Language
+                  learning Language
                 </label>
 
                 <select

@@ -110,7 +110,7 @@ export default class Profile extends Component {
             <section className="grid-four bg-white p-2">
               <div className="form-group  ">
                 <h2 class="large text-primary center p-3 ">
-                  Edit your Profile
+                  Edit Profile
                 </h2>
 
                 <form
@@ -209,8 +209,9 @@ export default class Profile extends Component {
                       {" "}
                       <h3>view profile</h3>
                     </Link>
+                    
                     <button className="btn btn-primary m-3" type="submit">
-                      <h3>submit changes </h3>
+                      <h3>save changes </h3>
                     </button>
 
                     {this.state.message && <h3>{this.state.message}</h3>}

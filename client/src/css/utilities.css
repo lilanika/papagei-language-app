@@ -290,8 +290,10 @@
 .bg-light,
 .badge-light {
   border: #fbfbfb;
-  border-radius: 0.5rem;
+  border-radius: 3rem;
 }
+
+
 
 /* Forms */
 .form .form-group {

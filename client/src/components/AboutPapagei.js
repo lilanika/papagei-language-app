@@ -1,35 +1,28 @@
 import React, { Component } from "react";
 import { login } from "../services/auth";
 import { Link } from "react-router-dom";
-//import logo from './layout/parrot.png';
-import Login from './Login';
 
+import Login from './Login';
+import Picture from './mochup-2.png'
+import Footer from './layout/Footer';
 export default class AboutPapagei extends Component {
   render() {
     return (
-      <section >
-
-      <section class="grid-container">
-      <div class="grid-element-one">
-      
-        <h1 class=""> get into conversation with native speakers </h1>
-        <Link to="/signup" className=" btn btn-dark m-2">
+      <section class="m-landing">
+      <section class="grid-container max-width">
+      <div class="reg ">
+        <h1> Get into conversation with native speakers </h1>
+        <Link to="/signup" className="   btn btn-light my-3 flex-smart">
         register for free
       </Link>
       </div>
+      <div class="pic ">
 
-      <div class=" grid-element ">
-  
-
-    
-        
-        
-
-
-
-
+      <img src={Picture} alt="papagei"/>
+ 
       </div>
 </section>
+<Footer/>
      
     </section>
    

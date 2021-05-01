@@ -1,76 +1,93 @@
-<div className="  ">
-            <div className= "profile card-color" key={index}  >
-          <img className="img-profile"
-           
-            src={user.imageUrl}
-            alt = ""
-            /*src={`https://res.cloudinary.com/demo/image/upload/w_200,h_200,c_fill,r_max/${user.imageUrl}`} */
-            /*https://res.cloudinary.com/demo/image/upload/w_100,h_100,c_thumb,g_faces/couple.jpg */
+<section  className="container-auth p-2" >
+      <div>
+         <h1 class="large text-primary">Login</h1>
+         <p class="lead"><i class="fas fa-user"></i> Login to Your Account</p>
+        <form class="form grid-one auth" s onSubmit={this.handleSubmit}>
+          <label htmlFor="username"></label>
+          <input
+            className="form-group form-text" 
+            type="text"
+            name="username"
+            value={this.state.username}
+            onChange={this.handleChange}
+            id="username"
+            placeholder="Username"
           />
-          <div>
-            <h2 className="my-1">{user.name}, {user.age}</h2>
-            <h3> Age:{user.age}</h3>
-            <h3> Gender: {user.gender}</h3>
-            <h3> Location: {user.location}</h3>
-           
-            <Link to={`/users/${user._id}`}  className="btn btn-dark my-2">View Profile</Link>
-            <Link to={`/users/${user._id}/message`} className="btn btn-dark my-2 "> <i class="fas fa-paper-plane"></i></Link>
-          </div>
-          <ul>
-            <li className="text-primary">
-              <p className="grey"> <i class="far fa-comments text-secondary "></i>Speaks</p>
-              <h3>{user.nativeLanguages}</h3>
-            </li>
-            <li className="text-primary">
-            <p className="grey "><i class="fas fa-comments">
-            </i>Learns</p>
-              <h3>{user.learningLanguages}</h3>   
-            </li>
-          </ul>
-        </div>
-        </div>
+          <label htmlFor="password"></label>
+          <input
+            className="form-group form-text" 
+            type="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+            id="password"
+            placeholder="Password"
+          />
+          <button  className="btn btn-primary" type="submit">Login</button>
+          {this.state.message && (
+            <h3>{this.state.message}</h3>
+          )}
+        </form>
+      
+        <p class="my-3">
+        Don't have an account?
+        <Link to="/signup" className=" text-dark"> Signup </Link>
+      </p>
+      </div>
+      </section>
 
 
 
-           <div className=" grid-three bg-white p-2 ">
-              <ul className="flex-smart">
-                <li>
-                  <Link
-                    to="/profile"
-                    className="btn my-1  btn-smart"
-                    title=" edit your profile"
-                  >
-                    <i class="fas fa-cog p-icons-settings btn-width">profile</i> 
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    title=" choose a languages"
-                    to="/languages"
-                    className="btn my-1 btn-smart"
-                  >
-                    <i class="fas fa-comments p-icons-settings btn-width"></i> 
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    title="upload a picture"
-                    to="/upload"
-                    className="btn my-1  btn-smart "
-                  >
-                    <i class="fas fa-camera p-icons-settings btn-width"></i> picture
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    title="logout"
-                    to="/"
-                    onClick={() => this.handleLogout()}
-                    className="btn my-1 btn-smart"
-                  >
-                    <i class="fas fa-sign-out-alt p-icons-settings btn-width"></i>logout
-                  </Link>
-                </li>
-              </ul>
-            </div>
 
+      /////
+
+
+        <section >
+      <section class="grid-container">   <div class=" grid-element ">
+      <section  className="container-auth p-2" >
+      <div>
+         <h1 class="large text-primary">Login</h1>
+         <p class="lead"><i class="fas fa-user"></i> Login to Your Account</p>
+        <form class="form grid-one auth" s onSubmit={this.handleSubmit}>
+          <label htmlFor="username"></label>
+          <input
+            className="form-group form-text" 
+            type="text"
+            name="username"
+            value={this.state.username}
+            onChange={this.handleChange}
+            id="username"
+            placeholder="Username"
+          />
+          <label htmlFor="password"></label>
+          <input
+            className="form-group form-text" 
+            type="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+            id="password"
+            placeholder="Password"
+          />
+          <button  className="btn btn-primary" type="submit">Login</button>
+          {this.state.message && (
+            <h3>{this.state.message}</h3>
+          )}
+        </form>
+      
+        <p class="my-3">
+        Don't have an account?
+        <Link to="/signup" className=" text-dark"> Signup </Link>
+      </p>
+      </div>
+      </section>
+      </div>
+      <div class="grid-element-one">     
+        <h1 class=""> get into conversation with native speakers </h1>
+        <Link to="/signup" className=" btn btn-dark m-2">
+        register for free
+      </Link>
+      </div>
+   
+</section>
+</section>

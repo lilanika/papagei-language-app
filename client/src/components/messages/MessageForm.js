@@ -69,10 +69,10 @@ export default class MessageForm extends Component {
 
     if (this.state.recipient) {
       return (
-        <div className="max-width" >
+        <div >
           <Navbar />
           <div className="max-width" >
-          <section class="grid-layout my-5 container">
+          <section class="grid-layout container">
             <div className=" profile-button ">
               <Link to="/" className=" btn btn-light button ">
                 Back To Profiles
@@ -94,7 +94,7 @@ export default class MessageForm extends Component {
                     Write {this.state.recipient.name} a message
                   </h2>
 
-                  <form className="form message-form " onSubmit={this.handleSubmit}>
+                  <form className="form message-form  smart-p" onSubmit={this.handleSubmit}>
                     <textarea
                       type="text"
                       rows="4"

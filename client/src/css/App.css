@@ -15,27 +15,8 @@
   --orange-color:  #056d5a;
 }
 
-.card-color {
-background-color: var(--card-color);
-border-color:var(--card-color);
-}
 
-.btn-360 button {
-  margin-left: 3rem !important;
-}
-
-
-.border{ 
-  border: 8px solid red;
-}
-.match{
-  text-align: center;
-  padding: 4rem;
-  margin-top:4rem;
-  font-weight: bold;
-  font-size: 3rem;
-}
-
+/*
 
 .box {
   background-color: #221e41;;
@@ -44,6 +25,8 @@ border-color:var(--card-color);
   padding: 20px;
   font-size: 150%;
 }
+*/ 
+
 
 * {
   box-sizing: border-box;
@@ -61,55 +44,9 @@ body {
    
 }
 
-.footer p,
-.footer a {
-  color:grey;
-  font-weight: 100;
-  padding:0.2rem;
-  align-items: center;
-  font-size: 0.7rem;
-  margin:auto;
-  text-align: center;
-}
-
-.grid-container{
-  display:grid;
-grid-template-columns: repeat( 2, 1fr) ;
-  height:100vh;
-  padding:2rem;
-}
-
-.grid-container h1 {
-  position: absolulte;
-  margin: 5rem;
-}
-.grid-element{
-  background-color: rgb(246, 246, 246);
-  text-align:center;
-  padding:20px;
-}
-.grid-element-one{
- 
-  background-color:#F3CE00;
-  text-align:center;
-  padding:20px;
-}
-
-.grid-container img  {
-  width:100px;
-  height:100px;
-}
-
 a {
   color: var(--light-color);
   color:#221e41;;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bolder;
-}
-
-.navbar a {
-  color: var(--dark-color);
   text-decoration: none;
   font-size: 1rem;
   font-weight: bolder;
@@ -119,22 +56,65 @@ ul {
   list-style: none;
 }
 
-.border { 
-  border-radius: 1rem;
-  border: 5px;
-  border-color: rgb(252, 247, 247);
-}
-
+/*
 img {
   width: 100%;
 }
-
-/* Profile Picture */ 
-
+*/
+/*allg radius */ 
 .round-img {
   border-radius: 80%;
 }
 
+
+
+/* about Papagei*/
+.grid-container{
+    display: grid;
+    grid-template-areas:
+      'reg pic';
+    grid-gap: 1rem; 
+    margin: 0 2rem;
+}
+
+.grid-container h1 {
+  font-size: 2rem;
+  padding-top:5rem;
+
+}
+
+.animation {
+  transition:0.15s;
+}
+
+.animation:hover {
+  transform: scale(0.99) translateY(-3px);
+  box-shadow: 0 10px 20px rgba(39, 42, 56, 0.2);
+}
+
+
+.reg{
+  padding:20px;
+  background-color:#F3CE00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+/*
+.grid-container img  {
+  width:100px;
+  height:100px;
+}
+*/
+
+
+
+  /* profile picture */
 .img-profile { 
     border: 2rem grey;
     border-radius:10rem;
@@ -150,17 +130,6 @@ img {
 }
 
 
-/* Gridsystem */
- 
-.grid-layout {
-  display: grid;
-  grid-template-areas:
-    'one one'
-    'two two'
-    'three four ';
-  grid-gap: 1rem;
- 
-}
 
 /*
 .grid-layout-user {
@@ -173,17 +142,37 @@ img {
 */ 
 
 
-/* UserList.js --> cards*/
+/*start */ 
+.match{
+  text-align: center;
+  padding: 4rem;
+  margin-top:4rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
 
+.filter {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  align-items: center;
+  grid-gap: 4rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  margin: 2rem 2rem 0 2rem;
+  }
+
+  /* cards container*/
 .profile-user {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr ;
   grid-gap: 10px;
-  /*background-color: #fff;
-  color: #444;*/
 }
 
+
+/*cards*/
 .profile {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
@@ -196,28 +185,46 @@ img {
   margin:2rem 2rem 0 2rem;
 }
 
-.filter {
-display: grid;
-grid-template-columns: 2fr 2fr 2fr;
-align-items: center;
-grid-gap: 4rem;
-padding: 1rem;
-line-height: 1.8;
-margin-bottom: 1rem;
-border-radius: 5px;
-margin: 2rem 2rem 0 2rem;
+.card-color {
+  background-color: var(--card-color);
+  }
+
+/*language -cards*/
+
+.profile ul {
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 0, 2rem;
+  border-radius: 0 0rem 2rem 2rem;
+}
+
+.location-smart {
+  display: none;
+}
+
+.profile h3 {
+  padding: 0rem;
+}
+
+.p-icons-settings {
+  padding:  0 0.5rem 0 0 ;
+  display: inline;
 }
 
 
 
-
-
-/* filter*/ 
-
-
-
-/* UserList.js --> für den Abstand  */
-
+/* Gridsystem */
+ 
+.grid-layout {
+  display: grid;
+  grid-template-areas:
+    'one one'
+    'two two'
+    'three four ';
+    
+  grid-gap: 1rem;
+ 
+}
 
 .grid-one {
   grid-area: one;
@@ -229,6 +236,7 @@ margin: 2rem 2rem 0 2rem;
   grid-gap: 1rem;
 }
 
+/* Back To Profiles*/
 .profile-button{
   grid-area: one ;
   flex-direction: column;
@@ -256,21 +264,6 @@ margin: 2rem 2rem 0 2rem;
 }
 
 
- 
-
-/* MessageForm & Container*/ 
-.message-form {
-  grid-area: one ;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  grid-gap: 0.5rem; 
-  padding: 0 3rem;
-}
-
-
 /* show Profile --> goals */ 
 .grid-two {
   grid-area: two;
@@ -278,6 +271,7 @@ margin: 2rem 2rem 0 2rem;
   border-radius: 0 0 0.5rem 0.5rem ;
 }
 
+/*
 .grid-two .skills {
   display: flex;
   align-items: center;
@@ -285,25 +279,21 @@ margin: 2rem 2rem 0 2rem;
   text-align: center;
   border-radius: 0.2rem;
 }
+*/ 
 
 .grid-three {
   grid-area: three ;
-  border-radius: 0.2rem;
-}
-
-.grid-three{
-  grid-area: three ;
-  border-radius: 0.2rem;
-}
-
-.grid-four {
-  grid-area: four;
-  border-radius: 0.5rem;     
+  border-radius: 0.5rem;
 }
 
 .grid-three h2,
 .grid-four h2 {
   margin-bottom: 1rem;
+}
+
+.grid-four {
+  grid-area: four;
+  border-radius: 0.5rem;     
 }
 
 
@@ -330,110 +320,80 @@ margin: 2rem 2rem 0 2rem;
  
 */ 
 
-.profile ul {
-  display: inline-flex;
-  justify-content: space-around;
-  padding: 0, 2rem;
-  border-radius: 0 0rem 2rem 2rem;
+/* MessageForm & Container*/ 
+.message-form {
+  grid-area: one ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-gap: 0.5rem; 
+  padding: 0 3rem;
 }
 
-
-
-
-.location-smart {
-  display: none;
+.footer p,
+.footer a {
+  color:grey;
+  font-weight: 100;
+  padding:0.2rem;
+  align-items: center;
+  font-size: 0.7rem;
+  margin:auto;
+  text-align: center;
 }
 
-.profile h3 {
-  padding: 0rem;
+.btn-360 button {
+  margin-left: 3rem !important;
 }
 
-
-
-.p-icons-settings {
-  padding:  0 0.5rem 0 0 ;
-  display: inline;
-}
-
-/* Mobile Styles */
 
 
 
 
 
 @media (min-width: 1100px) {
+
+
   .container {
     margin-top: 8rem;
   }
-  .flexbox-settings-Large-Screen{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    }
 
-
-    
-
+  .max-width {
+    margin: 0 auto; 
+    max-width: 1300px;
+   }
 
   .max-width-userList {
     max-width: 80%;
     margin: 0 auto; 
    }
 
-
-   .profile ul {
-    border-radius: 0 0rem 2rem 2rem;
-    padding: 2rem;
-    flex-direction: row;
-  }
-  
-  a:hover .profile ul {
-    border-radius: 2rem ;
-    background-color: darkslateblue;
-    border-radius: 2rem 0rem;
+   a {
+    color: black;
   }
 
-  /*
-.profile {
-  max-width: 60%;
-}
-*/
-.max-width {
- margin: 0 auto; 
- max-width: 1300px;
-}
-
-.location-smart {
-  display: block;
-}
-
-
-
-.grid-four {
-  grid-area: four;
-  border-radius: 0.5rem; 
-}
-/*
- .profile ul {
-  display: none;
-}
-*/
-  .img-profile img,
-  .grid-one img,
-  .profile img {
-    width: 200px;
-    margin: auto;
-    margin-top:1rem;
+  .profile .img-profile{
+    height: 290px;
+    width: 290px !important;
   }
 
+
+     /* start*/ 
   .match{
-    padding: 2rem;
+    padding: 1rem;
   }
   
+.filter {
+    grid-template-columns: 2fr 2fr 2fr;;
+    text-align: center;
+    grid-gap: 2rem;
+    }
 
-  .profile-user  {
+
+
+ /*cards*/
+ .profile-user  {
   display: grid;
   grid-template-columns: 2fr 2fr ;
   align-items: center;
@@ -452,32 +412,85 @@ margin: 2rem 2rem 0 2rem;
     border-radius: 2rem;
   }
 
-.filter {
-    grid-template-columns: 2fr 2fr 2fr;;
-    text-align: center;
-    grid-gap: 2rem;
-    }
 
+   .profile ul {
+    border-radius: 0 0rem 2rem 2rem;
+    padding: 2rem;
+    flex-direction: row;
+  }
   
+  a:hover .profile ul {
+    border-radius: 2rem ;
+    background-color: darkslateblue;
+    border-radius: 2rem 0rem;
+  }
 
   .card-buttons {
     display: none;
   }
 
-  a {
-    color: black;
-  }
-  .profile .img-profile{
-    height: 290px;
-    width: 290px !important;
-  }
+
+.location-smart {
+  display: block;
 }
+
+/*grid-system*/
+
+.grid-four {
+  grid-area: four;
+  border-radius: 0.5rem; 
+}
+
+
+  .img-profile img,
+  .grid-one img,
+  .profile img {
+    width: 200px;
+    margin: auto;
+    margin-top:1rem;
+  }
+ 
+  /*profile settings*/ 
+  .flexbox-settings-Large-Screen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    }
+
+}
+
+@media (min-width: 650px) {
+
+  .btn-360 {  
+  margin-right:0rem;
+  }
+
+  /*
+  .form .form-group {
+       margin: 0rem 0rem !important;
+      
+  }
+*/
+  .filter {
+    /*padding: 2rem 0rem !important;*/
+    margin: 2rem 1rem 0 1rem !important;
+   
+ }
+
+
+
+ 
+   }
+
 
 
 
 
 @media (min-width: 1380px) {
  
+  /*cards*/ 
   .profile-user {
     grid-template-columns: 2fr 2fr 2fr; 
     }
@@ -524,78 +537,38 @@ margin: 2rem 2rem 0 2rem;
   }
 
 
-
-  @media (min-width: 650px) {
-
-    .btn-360 {
-     
-    margin-right:0rem;
-  
-      
-    }
-
-    .form .form-group {
-       margin: 0rem 0rem !important;
-  }
-
   
 
-   
-   
-   
-  
-   
-   }
-
-
-   @media (max-width :350px) {
-    .btn-360 button {
-      margin-left:0rem 0rem ;
-    }
-   }
+ 
  
 
 @media (max-width: 816px) {
 
-.navbar {
+  .pic {
+    display:none;
+  }
 
-  padding: 2rem 1rem !important;
-
-}
+  .grid-container{
+    display: grid;
+    grid-template-areas:
+      'reg'
+      'pic';
  
+ 
+}
+  
+  a {
+    color: black;
+  }
+
+
+  .navbar {
+    padding: 2rem 1rem !important;
+  }
 
   .container {
     margin-top: 8rem;
     padding: 1rem 1rem !important;
-  }
-
-  .large {
-    font-size: 2.5rem !important;
-    padding: 1rem 0rem !important;
-  }
-
-  .btn {
-    margin-right: 0rem ! important;
-  }
-
-  .message-form {
-    padding: 0rem; 
-
-  }
-  
- 
-
-  
-  
- 
-
-  .match{
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-  
-  .card-buttons {
-    display: none;
   }
 
   .flex-smart {
@@ -604,6 +577,53 @@ margin: 2rem 2rem 0 2rem;
     justify-content: space-between;
     align-items: center;
     margin: 2.5rem;
+  }
+
+  /*start*/
+  .match{
+    font-size: 2rem;
+    padding:1rem;
+  }
+
+  .showProfile-btn{
+    margin-top:1rem;
+  }
+
+      /* start  cards */
+  
+      .profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 1.5rem;
+        padding: 0rem;
+        border-radius: 2rem;
+      }
+  
+      .card-buttons {
+        display: none;
+      }
+    
+      .filter {
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 2rem;
+        
+      }
+  
+ 
+ /*settings*/
+  .large {
+    font-size: 2.5rem !important;
+    padding: 1rem 0rem !important;
+  }
+
+
+  .message-form {
+    padding: 0.3rem; 
+  }
+
+  .btn {
+    margin-right: 0rem ! important;
   }
   
   .btn-smart{
@@ -625,11 +645,7 @@ margin: 2rem 2rem 0 2rem;
   .x-large {
     font-size: 3rem;
   }
-
-  .large {
-    font-size: 2rem;
-  }
-
+ 
   .lead  {
     font-size: 1rem;
   }
@@ -638,48 +654,7 @@ margin: 2rem 2rem 0 2rem;
     font-size: 1.6rem;
   }
 
-  /* Navbar */
-  .navbar {
-    display: block;
-    text-align: center;
-  }
 
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  
-
-  .navbar .welcome {
-    display: none;
-  }
-
- 
-
-  /* Profiles Page */
-  
-  
-
-
-  .profile {
-    grid-template-columns: 1fr;
-    text-align: center;
-    grid-gap: 1.5rem;
-    padding: 0rem;
-    border-radius: 2rem;
-  }
-
-   a {
-     color: black;
-   }
- 
-
-  .filter {
-    grid-template-columns: 1fr;
-    text-align: center;
-    grid-gap: 2rem;
-  }
 
   /*
   .wrapper {
@@ -701,7 +676,6 @@ margin: 2rem 2rem 0 2rem;
 
 */ 
 
-
   /* Profile Page */
   .grid-three img,
   .grid-one img,
@@ -710,7 +684,7 @@ margin: 2rem 2rem 0 2rem;
     margin:  auto;
     margin-top:2.6rem;
     padding: 0rem;
-   
+   display:flex;
   }
 
   .profile .img-profile{
@@ -720,16 +694,18 @@ margin: 2rem 2rem 0 2rem;
 
  
 
+ /* grid-system*/ 
+
+
   .grid-layout {
     grid-template-areas:
       'one'
       'two'
       'three'
-      'four';
-      
-      
+      'four';   
   }
 
+  /*
   .grid-two .skills {
     flex-direction: column;
   }
@@ -747,7 +723,9 @@ margin: 2rem 2rem 0 2rem;
   .post button {
     padding: 0.3rem 0.4rem;
   }
+  */
 
+  
   .img-smart{
     display:none;
   }
@@ -768,11 +746,22 @@ margin: 2rem 2rem 0 2rem;
   .location-smart {
     display: block;
   }
-  
-  
-
-
-  
  
 }
 
+
+
+
+   @media (max-width:360px) {
+    .btn-360 button {
+      margin-left:0rem 0rem ;
+    }
+
+  .match h1 {
+    display:none;
+  }
+
+  .smart-p {
+    padding:0.5rem;
+  }
+   }

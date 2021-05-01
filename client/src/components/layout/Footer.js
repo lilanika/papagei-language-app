@@ -13,7 +13,14 @@ const Footer = (props) => {
   
   return (
    <div className=" flexbox footer ">
-    <p>Built and designed by<Link><i class="fab fa-github"></i> lilanika</Link> &<Link><i class="fab fa-github"></i> orianemgn </Link>during Ironhacks bootcamp</p>
+    <p>Built and designed by
+    <Link to="https://github.com/lilanika">
+    <i class="fab fa-github animation"> 
+    </i> lilanika</Link> 
+    &
+    <Link to="https://github.com/orianemgn" >
+    <i class="fab fa-github animation">
+    </i> orianemgn</Link>during Ironhacks bootcamp</p>
 
 </div>
   )

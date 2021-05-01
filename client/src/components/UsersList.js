@@ -62,7 +62,7 @@ export default class UsersList extends Component {
  
       
       <div class=" p-2 "> </div>
-      <div className=" match">Find your match
+      <div className=" match"> Find your match
       <form className="form filter " onSubmit={this.handleSubmit}> 
       <div> 
       <select name="location" id="location" form="form" onChange={this.handleChange}>
@@ -84,7 +84,7 @@ export default class UsersList extends Component {
 
           <label htmlFor="learningLanguages" ></label>
           <select name="learningLanguages" id="learningLanguages" form="form" onChange={this.handleChange} >
-          <option value="" selected>Select your learning language</option>
+          <option value="" selected>learning language</option>
           <option value="">All</option>
           <option value="English">English</option>
           <option value="French">French</option>
@@ -100,7 +100,7 @@ export default class UsersList extends Component {
           </div>
           <div>
           <select name="nativeLanguages" id="nativeLanguages" form="form" onChange={this.handleChange}>
-          <option value="" selected>Select your native language </option>
+          <option value="" selected> native language </option>
           <option value="">All</option>
           <option value="English">English</option>
           <option value="French">French</option>
@@ -124,7 +124,7 @@ export default class UsersList extends Component {
           return (
             
             <Link to={`/users/${user._id}`}  className=" linkwrapper"><div className="  ">
-            <div className= "profile card-color " key={index}  >
+            <div className= "profile card-color animation " key={index}  >
           <img className="img-profile p-1"
            
             src={user.imageUrl}

@@ -40,7 +40,7 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <section  className="container-auth p-2" >
+      <section className="container-auth p-2 " >
       <div>
          <h1 class="large text-primary">Login</h1>
          <p class="lead"><i class="fas fa-user"></i> Login to Your Account</p>
@@ -77,6 +77,8 @@ export default class Login extends Component {
       </p>
       </div>
       </section>
+    
+      
     )
   }
 }

@@ -19,6 +19,12 @@
 }
 
 
+.border { 
+  border-radius: 1rem;
+  border: 5px;
+  border-color: rgb(252, 247, 247);
+}
+
 .flex-nowrap {
   display: flex;
   justify-content: space-between;
@@ -135,6 +141,11 @@
 }
 
 /* Margin */
+
+.m-landing {
+  margin-top:10rem;
+}
+
 .m {
   margin: 0.5rem;
 }
@@ -279,12 +290,13 @@
 .bg-light,
 .badge-light {
   border: #fbfbfb;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
 }
 
 /* Forms */
 .form .form-group {
   margin: 1.2rem 10rem;
+   padding: 0.3rem !important;
 }
 
 .form p, 

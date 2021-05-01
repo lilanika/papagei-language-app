@@ -44,8 +44,8 @@ export default class ShowProfile extends Component {
     return (
       <div>
         <Navbar />
-        <section class="container">
-          <Link to="/" className="btn btn-light">
+        <section class="container ">
+          <Link to="/" className="btn btn-light showProfile-btn">
             Back To Profiles
           </Link>
 

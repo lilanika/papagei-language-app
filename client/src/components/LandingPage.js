@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom'
 import { logout } from '../services/auth';
 
 
-
-
-
-
 const handleLogout = props => {
   logout().then(() => {
     props.setUser(null)
@@ -16,6 +12,8 @@ const handleLogout = props => {
 export default function LandingPage(props) {
   console.log(props.user);
   return (
+
+    
     <div>
       <ul>
         {/* If we have a logged in user -> show projects and logout otherwise show login and signup */}
@@ -23,29 +21,24 @@ export default function LandingPage(props) {
           <>
             <li>
               <Link to="/profile" onClick={() => handleLogout(props)}>
-                Logout
+               
               </Link>
             </li>
           </>
         ) : (
           <>
-            <nav className="navbar bg-dark ">
-              <ul>
-              <img 
-                className=" img-smart round-img png margin-y"
-                src="https://img.icons8.com/color/48/000000/parrot.png"
-                alt=""
-              />
-                
-                <h1>Papagei</h1>
-              </ul>
-              <ul>
-              <li>
-                  <Link to="/" className="">
-                    About Papagei 
-                  </Link>
-                </li>
-                <li>
+          <nav className="navbar">
+    <ul>
+   
+    <img 
+     className=" round-img png margin-y"
+     src="https://img.icons8.com/color/48/000000/parrot.png"
+    alt=""
+    /> <Link to="/"><h1>Papagei</h1></Link>
+    </ul>
+      <ul class="nav">
+
+                  <li>
                   <Link to="/signup" className="">
                     Signup
                   </Link>
@@ -55,11 +48,9 @@ export default function LandingPage(props) {
                     Login
                   </Link>
                 </li>
-
-
-              </ul>
-            </nav>
-
+      </ul>
+    </nav>
+            
 
             
            

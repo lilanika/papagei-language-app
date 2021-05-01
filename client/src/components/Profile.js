@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./layout/Navbar";
 import axios from "axios";
 import { logout } from "../services/auth";
-import Footer from './layout/Footer'
+import Footer from './layout/Footer';
 //import UsersList from './UsersList'
 
 export default class Profile extends Component {

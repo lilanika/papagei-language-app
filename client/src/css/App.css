@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:ital,wght@0,400;0,700;0,800;0,900;1,700&display=swap');
 
 :root {
-  --primary-color:#F3CE00;
-  --primary-color:#fcc307;
- /* --dark-color:   #807da8; */
+  /*--primary-color:#F3CE00;*/
+  --primary-color:#e6b141;
+
 
  /*--primary-color:linear-gradient(to right,#313B47,#00C8AA);*/
   --dark-color:  #056d5a;
@@ -21,6 +21,8 @@
   margin: 0;
   
 }
+
+
 
 body {
   font-family: 'Poppins', sans-serif;

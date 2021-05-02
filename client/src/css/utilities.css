@@ -321,6 +321,7 @@
   border:  1px solid #ccc;
   transform: capitalize;
   border-radius:0.5rem;
+  background-color: white;
 }
 
 .form input[type='submit'],

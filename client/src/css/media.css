@@ -6,6 +6,7 @@
     margin: 0 2rem;
   }
 
+
   .pic {
     display: none;
   }
@@ -15,6 +16,7 @@
   .container {
     margin-top: 8rem;
   }
+
 
   .max-width {
     margin: 0 auto;
@@ -47,6 +49,7 @@
   }
 
   .filter {
+    padding: 2rem 0rem !important;
     grid-template-columns: 2fr 2fr 2fr;
     text-align: center;
     grid-gap: 2rem;
@@ -132,6 +135,7 @@
   .profile-user {
     grid-template-columns: 2fr 2fr 2fr;
   }
+
 
   .card-buttons {
     display: none;

@@ -4,12 +4,11 @@ import './css/media.css';
 import './css/landing.css';
 import './css/utilities.css';
 import './css/navbar.css';
-import './auth.css';
+import './css/auth.css';
 import { Route, Redirect } from 'react-router-dom';
 import LandingPage from './components/LandingPage'
 import Signup from './components/Signup';
 import Login from './components/Login';
-
 import HomePage from './components/HomePage';
 import Profile from './components/Profile';
 import Languages from './components/Languages';

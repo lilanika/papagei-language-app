@@ -201,21 +201,28 @@ export default class Profile extends Component {
                     id="description"
                   />
                  
-                  <div className="btn-360 m-2">
+
+
+                  <div className=" settings-btn m-2">
+                  <div>
                     <Link
                       to={`/users/${this.props.user._id}`}
                       className="btn btn-dark p-4"
                     >
-                      {" "}
                       <h3>view profile</h3>
                     </Link>
-                    
+                    </div>                  
+<div>
                     <button className="btn btn-primary my-3 focus" type="submit">
                       <h3>save changes </h3>
                     </button>
 
                     {this.state.message && <h3>{this.state.message}</h3>}
+                    </div>
                   </div>
+
+
+
                 </form>
               </div>
             </section>

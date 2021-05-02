@@ -10,9 +10,9 @@
   z-index: 1;
   width: 100%;
   top: 0;
-  background-color:var(--card-color);
   background-color:rgb(246, 246, 246);
 }
+
 
 .navbar a {
   color: var(--dark-color);
@@ -77,10 +77,6 @@ color:rgb(230, 218, 218);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/*
-.start:hover{
-  color: var(--primary-color);
-} */
 
 .bg-blue {
   border-radius: 10rem;

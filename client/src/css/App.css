@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:ital,wght@0,400;0,700;0,800;0,900;1,700&display=swap');
 
 :root {
-  --primary-color:#e6b141;
+  --primary-color:#F3CE00;
+  --primary-color:#fcc307;
  /* --dark-color:   #807da8; */
 
  /*--primary-color:linear-gradient(to right,#313B47,#00C8AA);*/
@@ -15,6 +16,15 @@
   --orange-color:  #056d5a;
 }
 
+
+
+.settings-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width:80%
+}
 
 /*
 
@@ -51,6 +61,8 @@ a {
   font-size: 1rem;
   font-weight: bolder;
 }
+
+
 
 ul {
   list-style: none;
@@ -103,6 +115,9 @@ img {
   text-align: center;
 }
 
+.pic {
+  background:#F3CE00;
+}
 
 
 /*
@@ -259,6 +274,7 @@ img {
   margin: 0 0.3rem;
 }
 
+
 .grid-one .icons a:hover {
   color: var(--dark-color);
 }
@@ -343,16 +359,38 @@ img {
   text-align: center;
 }
 
+/*
 .btn-360 button {
   margin-left: 3rem !important;
 }
 
+*/ 
+
+.navbar a:hover {
+  color:burlywood;
+}
 
 
+@media (max-width: 1000px) {
 
+  .grid-container{
+    display: grid;
+    grid-template-areas:
+      'reg';
+    grid-gap: 1rem; 
+    margin: 0 2rem;
+}
+
+
+.pic {
+  display:none;
+}
+}
 
 
 @media (min-width: 1100px) {
+
+
 
 
   .container {
@@ -367,6 +405,12 @@ img {
   .max-width-userList {
     max-width: 80%;
     margin: 0 auto; 
+   }
+
+
+   .max-width-landing {
+    margin: 0 auto;
+    max-width: 1100px;
    }
 
    a {
@@ -461,18 +505,15 @@ img {
 
 }
 
+
+
+
 @media (min-width: 650px) {
 
-  .btn-360 {  
-  margin-right:0rem;
-  }
+  ul .nav:hover{
+    color: var(--primary-color) !important;
+  } 
 
-  /*
-  .form .form-group {
-       margin: 0rem 0rem !important;
-      
-  }
-*/
   .filter {
     /*padding: 2rem 0rem !important;*/
     margin: 2rem 1rem 0 1rem !important;
@@ -480,12 +521,7 @@ img {
  }
 
 
-
- 
-   }
-
-
-
+  }
 
 
 @media (min-width: 1380px) {
@@ -528,11 +564,9 @@ img {
     .location-smart {
       display: block;
     }
+  
+  
 
-    .navbar a:hover {
-      color:burlywood;
-    }
-    
   
   }
 
@@ -543,6 +577,9 @@ img {
  
 
 @media (max-width: 816px) {
+
+  
+
 
   .pic {
     display:none;
@@ -556,11 +593,16 @@ img {
  
  
 }
-  
+
+
+  /*
   a {
     color: black;
   }
+*/ 
 
+
+ 
 
   .navbar {
     padding: 2rem 1rem !important;
@@ -753,9 +795,8 @@ img {
 
 
    @media (max-width:360px) {
-    .btn-360 button {
-      margin-left:0rem 0rem ;
-    }
+    
+   
 
   .match h1 {
     display:none;

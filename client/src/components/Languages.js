@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./layout/Navbar";
-import { signup } from "../services/auth";
 import axios from "axios";
 import { logout } from "../services/auth";
-import Footer from './layout/Footer'
+
 
 export default class Languages extends Component {
   state = {

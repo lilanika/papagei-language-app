@@ -10,46 +10,49 @@
   z-index: 1;
   width: 100%;
   top: 0;
-  background-color:rgb(246, 246, 246);
+  background-color: rgb(246, 246, 246);
 }
 
+.bg-blue {
+  border-radius: 10rem;
+  padding: 0.2rem;
+  background-color: var(--dark-color);
+}
 
 .navbar a {
   color: var(--dark-color);
   text-decoration: none;
   font-size: 1rem;
   font-weight: bolder;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
 }
 
 nav img {
-    width: 30px;
-    height: 30px;
-    margin: auto 0;
-    opacity: 0.7;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  opacity: 0.7;
 }
 
 .navbar h1 {
-/*color:rgb(203, 212, 221)*/
-font-size: 1.4rem;
-/*text-transform: uppercase;*/
+  font-size: 1.4rem;
 }
-
 
 .navbar ul {
   display: flex;
   justify-content: space-around;
- 
 }
+
 
 .start {
- margin:auto 0;
- padding: 0 1rem;
-color:rgb(230, 218, 218);
+  margin: auto 0;
+  padding: 0 1rem;
+  color: rgb(230, 218, 218);
 }
 
-
-/*icons*/ 
- nav i {
+/*icons*/
+nav i {
   font-size: 3.5rem;
   color: var(--primary-color);
 }
@@ -60,101 +63,36 @@ color:rgb(230, 218, 218);
   padding: 0.7rem;
 }
 
-.navbar a {
-  color: var(--dark-color);
-  padding: 0.45rem;
-  margin: 0 0.25rem;
-}
-
 .msg:hover,
 .navbar h1:hover,
-.profile-i:hover{
-    transform: translateY(-3px);
- 
+.profile-i:hover {
+  transform: translateY(-3px);
 }
 
 .msg:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-.bg-blue {
-  border-radius: 10rem;
-  padding:0.2rem;
-  background-color: var(--dark-color);
+.navbar a:hover {
+  color: burlywood;
 }
 
 
 
-/*
-
-.msg:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-}
-
-.navbar .welcome span {
-  margin-right: 0.6rem;
-}
-*/ 
-
- 
-  @media (max-width: 700px) {
-    .start  {
-      display:none;
-     }
-
-     nav i {
-      font-size: 2.8rem;
-      color: var(--primary-color);
-    }
-    
-    .msg i {
-      font-size: 1.1rem;
-      color: var(--primary-color);
-      padding: 0.7rem;
-    }
-
-    
-    
-  }
-  
-  /*
-  .navbar {
-    display: block;
-    text-align: center;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar .welcome {
+@media (max-width: 700px) {
+  .start {
     display: none;
   }
 
- */
+  nav i {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+  }
 
-  
+  .msg i {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    padding: 0.7rem;
+  }
+}
 
-  

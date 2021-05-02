@@ -4,7 +4,6 @@
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
-
   padding: 2rem 2rem;
   margin-top: 6rem;
   margin-bottom: 3rem;
@@ -142,9 +141,6 @@
 
 /* Margin */
 
-.m-landing {
-  margin-top:10rem;
-}
 
 .m {
   margin: 0.5rem;
@@ -293,8 +289,6 @@
   border-radius: 3rem;
 }
 
-
-
 /* Forms */
 .form .form-group {
   margin: 1.2rem 10rem;
@@ -349,4 +343,13 @@ button {
   color:var(--dark-color);
 }
 
+
+.animation {
+  transition:0.15s;
+}
+
+.animation:hover {
+  transform: scale(0.99) translateY(-3px);
+  box-shadow: 0 10px 20px rgba(39, 42, 56, 0.2);
+}
 

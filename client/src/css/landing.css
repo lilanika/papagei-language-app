@@ -1,18 +1,33 @@
 /* Landing Page */
 
-.landing {
-  position: relative;
-  height: 100vh;
+.grid-container{
+  display: grid;
+  grid-template-areas:
+    'reg pic';
+  grid-gap: 1rem; 
+  margin: 0 2rem;
 }
 
-.landing-inner {
-  color: #fff;
-  height: 100%;
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.grid-container h1 {
+font-size: 2rem;
+padding-top:5rem;
+
+}
+
+.m-top-landing {
+  margin-top:10rem;
+}
+
+.reg{
+padding:20px;
+background-color:#F3CE00;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.pic {
+background:#F3CE00;
 }

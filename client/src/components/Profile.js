@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./layout/Navbar";
 import axios from "axios";
 import { logout } from "../services/auth";
-import Footer from './layout/Footer';
+import Footer from "./layout/Footer";
 //import UsersList from './UsersList'
 
 export default class Profile extends Component {
@@ -69,26 +69,26 @@ export default class Profile extends Component {
         <Navbar />
         <div className="max-width">
           <div className="grid-layout my-5 container">
-          <div className="grid-three bg-white p-2 ">
-            <h2>
+            <div className="grid-three bg-white p-2 ">
+              <h2>
                 <i class="fas fa-user my-1"></i> Settings
               </h2>
               <ul className="flex-smart ">
                 <li>
                   <Link to="/profile" className="btn my-1 btn-width">
-                  <i class="fas fa-cog p-icons-settings btn-width p-icons-settings"></i> 
+                    <i class="fas fa-cog p-icons-settings btn-width p-icons-settings"></i>
                     Profile
                   </Link>
                 </li>
                 <li>
                   <Link to="/languages" className="btn my-1 btn-width">
-                  <i class="fas fa-comments p-icons-settings btn-width p-icons-settings"></i>
+                    <i class="fas fa-comments p-icons-settings btn-width p-icons-settings"></i>
                     Languages
                   </Link>
                 </li>
                 <li>
                   <Link to="/upload" className="btn my-1 btn-width ">
-                  <i class="fas fa-camera p-icons-settings btn-width p-icons-settings"></i>
+                    <i class="fas fa-camera p-icons-settings btn-width p-icons-settings"></i>
                     Picture
                   </Link>
                 </li>
@@ -99,7 +99,7 @@ export default class Profile extends Component {
                       onClick={() => this.handleLogout()}
                       className="btn my-1 btn-width"
                     >
-                     <i class="fas fa-sign-out-alt p-icons-settings btn-width p-icons-settings"></i>
+                      <i class="fas fa-sign-out-alt p-icons-settings btn-width p-icons-settings"></i>
                       Logout
                     </Link>
                   </li>
@@ -109,72 +109,61 @@ export default class Profile extends Component {
 
             <section className="grid-four bg-white p-2 ">
               <div className="form-group  ">
-                <h2 class="large text-primary center p-3  ">
-                  Edit Profile
-                </h2>
+                <h2 class="large text-primary center p-3">Edit Profile</h2>
 
                 <form
                   className="form message-form  form-text"
-                  onSubmit={this.handleSubmit} >
+                  onSubmit={this.handleSubmit}
+                >
+                  <label className="grey " htmlFor="age ">
+                    <p> name</p>
+                  </label>
+                  <label htmlFor="name"></label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                    id="name"
+                    className="message-form-test"
+                  />
 
+                  <label className="grey" htmlFor="age ">
+                    <p>age</p>
+                  </label>
+                  <input
+                    type="number"
+                    name="age"
+                    value={this.state.age}
+                    onChange={this.handleChange}
+                    id="age"
+                    min="16"
+                    max="100"
+                    className="message-form-test"
+                  />
 
-                   
-                      <label className="grey " htmlFor="age ">
-                        <p> name</p>
-                      </label>
-                      <label htmlFor="name"></label>
-                      <input
-                        type="text"
-                        name="name"
-                        value={this.state.name}
-                        onChange={this.handleChange}
-                        id="name" 
-                        className="message-form-test"
-                        />
-                    
-
-                 
-                      <label className="grey" htmlFor="age ">
-                        <p>age</p>
-                      </label>
-                      <input
-                        type="number"
-                        name="age"
-                        value={this.state.age}
-                        onChange={this.handleChange}
-                        id="age"
-                        min="16"
-                        max="100"
-                        className="message-form-test"
-                      />
-                 
-
-              
-                      <label className="grey" htmlFor="age ">
-                        <p>location</p>
-                      </label>
-                      <select
-                        name="location"
-                        id="location"
-                        form="carform"
-                        className="message-form-test"
-                        onChange={this.handleChange}>
-                        <option selected>{this.state.location}</option>
-                        <option value="Berlin">Berlin</option>
-                        <option value="Hamburg">Hamburg</option>
-                        <option value="Köln">Köln</option>
-                        <option value="Paris">Paris</option>
-                        <option value="Grenoble">Grenoble</option>
-                        <option value="London">London</option>
-                        <option value="Barcelona">Barcelona</option>
-                        <option value="Rome">Rome</option>
-                        <option value="Poznan">Poznan</option>
-                        <option value="Amsterdam">Amsterdam</option>
-                      </select>
-               
-                 
-                
-         
+                  <label className="grey" htmlFor="age ">
+                    <p>location</p>
+                  </label>
+                  <select
+                    name="location"
+                    id="location"
+                    form="carform"
+                    className="message-form-test"
+                    onChange={this.handleChange}
+                  >
+                    <option selected>{this.state.location}</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="Hamburg">Hamburg</option>
+                    <option value="Köln">Köln</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Grenoble">Grenoble</option>
+                    <option value="London">London</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Rome">Rome</option>
+                    <option value="Poznan">Poznan</option>
+                    <option value="Amsterdam">Amsterdam</option>
+                  </select>
 
                   <label htmlFor="goal" className="grey">
                     learning Goals
@@ -187,7 +176,6 @@ export default class Profile extends Component {
                     value={this.state.goal}
                     onChange={this.handleChange}
                   />
-
                   <label className="grey" htmlFor="goal">
                     Edit decription
                   </label>
@@ -200,38 +188,29 @@ export default class Profile extends Component {
                     onChange={this.handleChange}
                     id="description"
                   />
-                 
-
-
                   <div className=" settings-btn m-2">
-                  <div>
-                    <Link
-                      to={`/users/${this.props.user._id}`}
-                      className="btn btn-dark p-4"
-                    >
-                      <h3>view profile</h3>
-                    </Link>
-                    </div>                  
-<div>
-                    <button className="btn btn-primary my-3 focus" type="submit">
-                      <h3>save changes </h3>
-                    </button>
-
-                    {this.state.message && <h3>{this.state.message}</h3>}
+                    <div>
+                      <Link
+                        to={`/users/${this.props.user._id}`}
+                        className="btn btn-dark p-4"   >
+                        <h3>view profile</h3>
+                      </Link>
+                    </div>
+                    <div>
+                      <button
+                        className="btn btn-primary my-3 focus"
+                        type="submit"  >
+                        <h3>save changes </h3>
+                      </button>
+                      {this.state.message && <h3>{this.state.message}</h3>}
                     </div>
                   </div>
-
-
-
                 </form>
               </div>
             </section>
-           
           </div>
-          <Footer>
-        </Footer>
+          <Footer />
         </div>
-       
       </div>
     );
   }

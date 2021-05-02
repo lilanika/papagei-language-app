@@ -15,9 +15,7 @@ export default class HomePage extends Component {
       <div>
         <Navbar/>
         <UsersList {...this.props}/>
-        <Footer/>
-      
-       
+        <Footer/>      
       </div>
     )
   }

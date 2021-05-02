@@ -3,18 +3,15 @@ import { Link } from "react-router-dom";
 import Navbar from "../layout/Navbar";
 import axios from "axios";
 
-
 export default class MessagesContainer extends Component {
   state = {
     messages: [],
     recipientIdforConversation: null,
     reply: "",
-
   };
   componentDidMount() {
     this.getData();
   }
-
 
   getData = () => {
     const id = this.props.user._id;
@@ -90,13 +87,13 @@ export default class MessagesContainer extends Component {
     console.log("Filtered", filtered);
     const UsersList = unique.map((message) => {
       return (
-
         <div>
           <div key={message._id}>
             <button
               className="btn my-1 btn-width "
               value={message._id}
-              onClick={this.handleClick}>
+              onClick={this.handleClick}
+            >
               {message.name}
             </button>
           </div>
@@ -105,8 +102,8 @@ export default class MessagesContainer extends Component {
     });
     const displayMessages = filtered.map((message) => {
       return (
-        <div className="p" >
-          <p className="text-dark" >
+        <div className="p">
+          <p className="text-dark">
             <b>{message.sender.name} </b>
           </p>
           <p>{message.content}</p>
@@ -119,77 +116,75 @@ export default class MessagesContainer extends Component {
       return (
         <div>
           <Navbar />
-          <div class="max-width"> 
-          <div className="grid-layout my-5 container">
-            <div className="grid-three bg-white p-2 ">
-              <h2>
-                <i class="fas fa-user my-1"></i> Your Contacts
-              </h2>
-              <div className="flex-smart">{UsersList}
+          <div class="max-width">
+            <div className="grid-layout my-5 container">
+              <div className="grid-three bg-white p-2 ">
+                <h2>
+                  <i class="fas fa-user my-1"></i> Your Contacts
+                </h2>
+                <div className="flex-smart">{UsersList}</div>
               </div>
-            </div>
 
-            <section className=" grid-four bg-white">
+              <section className=" grid-four bg-white">
+                <div className="form-group">
+                  <h2 class="large text-primary center p-2 "> messages</h2>
+                  <div className=" p-2 btn-light flexbox border">
+                    <p>{displayMessages}</p>
+                  </div>
 
-              <div className="form-group">
-                <h2 class="large text-primary center p-2 "> messages</h2>
-                <div className=" p-2 btn-light flexbox border">
-                  <p>{displayMessages}</p>
+                  <form
+                    className="form message-form"
+                    onSubmit={this.handleSubmit}
+                  >
+                    <textarea
+                      type="text"
+                      rows="5"
+                      cols="10"
+                      className="form-group"
+                      name="reply"
+                      value={this.state.reply}
+                      onChange={this.handleChange}
+                      id="reply"
+                      placeholder="Write you message here"
+                    />
+                    <button
+                      className="btn btn-primary my-2 focus"
+                      type="submit"
+                    >
+                      <h3>Send message </h3>
+                    </button>
+                  </form>
                 </div>
-
-                <form
-                  className="form message-form"
-                  onSubmit={this.handleSubmit}
-                   >
-                  <textarea
-                    type="text"
-                    rows="5"
-                    cols="10"
-                    className="form-group"
-                    name="reply"
-                    value={this.state.reply}
-                    onChange={this.handleChange}
-                    id="reply"
-                    placeholder="Write you message here"
-                  />
-                  <button className="btn btn-primary my-2 focus" type="submit">
-                    <h3>Send message </h3>
-                  </button>
-                </form>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
-          </div>
-        
         </div>
       );
     } else {
       return (
         <div>
-        
           <Navbar />
-          <div class="max-width">  
-          <div className="grid-layout my-5 container">
-            <div className="grid-three bg-white p-2 ">
-              <h2>
-                <i class="fas fa-user my-1"></i> Your Contacts
-              </h2>
-              <div className="flex-smart">{UsersList}</div>
-            </div>
-
-            <section className=" grid-four bg-white p-2">
-              <div className="form-group">
-                <h2 class="large text-primary center p-2 ">messages</h2>
-                <p>{displayMessages}</p>
-                <p className=" center p-2">
-                  You don't have any message now, if you want you can contact a
-                  tandem partner in the list
-                </p>
+          <div class="max-width">
+            <div className="grid-layout my-5 container">
+              <div className="grid-three bg-white p-2 ">
+                <h2>
+                  <i class="fas fa-user my-1"></i> Your Contacts
+                </h2>
+                <div className="flex-smart">{UsersList}</div>
               </div>
-            </section>
+
+              <section className=" grid-four bg-white p-2">
+                <div className="form-group">
+                  <h2 class="large text-primary center p-2 ">messages</h2>
+                  <p>{displayMessages}</p>
+                  <p className=" center p-2">
+                    You don't have any message now, if you want you can contact
+                    a tandem partner in the list
+                  </p>
+                </div>
+              </section>
+            </div>
           </div>
-          </div>
-         
         </div>
       );
     }

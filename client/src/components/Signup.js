@@ -100,7 +100,7 @@ export default class Signup extends Component {
            <h2 className="m-3">Languages</h2>
           <label htmlFor="nativeLanguages" className="m"></label>
           <select name="nativeLanguages" id="nativeLanguages" form="carform" onChange={this.handleChange}  required >
-          <option selected> Choose a native language</option>
+          <option selected>native language</option>
           <option value="English">English</option>
           <option value="French">French</option>
           <option value="German">German</option>
@@ -114,7 +114,7 @@ export default class Signup extends Component {
           </select>
           <label htmlFor="learningLanguages" className="m-1"></label>
           <select name="learningLanguages" id="learningLanguages" form="carform" onChange={this.handleChange} required >
-          <option selected>Choose a learning language</option>
+          <option selected>learning language</option>
           <option value="English">English</option>
           <option value="French">French</option>
           <option value="German">German</option>
@@ -144,7 +144,7 @@ export default class Signup extends Component {
            
           </select>
           <h2 className="m-3"> Profile Settings </h2>
-          <label className="grey " htmlFor="age "><p>choose your age</p></label>
+          <label className="grey " htmlFor="age "><p> your age</p></label>
           <input
             className="form-group form-text" 
             type="Number"
@@ -158,10 +158,10 @@ export default class Signup extends Component {
           />  
           <label htmlFor="gender" className="m-1"></label>
           <select name="gender" id="gender" form="carform" onChange={this.handleChange}>
-          <option selected>Choose a gender...</option>
+          <option selected>gender...</option>
           <option value="female">Female</option>
           <option value="male">Male</option>
-          <option value="transgender">Transgender</option>
+          <option value="transgender">other</option>
           </select>
           <label htmlFor="description" className="m"></label>
           <textarea

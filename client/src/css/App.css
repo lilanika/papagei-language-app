@@ -5,6 +5,8 @@
   --primary-color:#e6b141;
 
 
+  
+
  /*--primary-color:linear-gradient(to right,#313B47,#00C8AA);*/
   --dark-color:  #056d5a;
   --dark-color:  #221e41;;
@@ -15,6 +17,8 @@
   --success-color: #28a745;
   --orange-color:  #056d5a;
 }
+
+
 
 * {
   box-sizing: border-box;

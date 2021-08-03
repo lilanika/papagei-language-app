@@ -1,17 +1,14 @@
 ## :bird::speech_balloon:PAPAGEI - Tandem App
 ### Build with React.js, NodeJS, MongoDB, Cloudinary during Ironhacks bootcamp
-## The project
-Papagei is a MERN application to find your tandem! 
+## The project -->  https://papagei-language-app.herokuapp.com/
+Papagei is a MERN application to get into conversation with native speakers & learn languages together 
+After Oriane MAGNIN and I built Papagei during Ironhack Bootcamp using React, Express and MongoDB, I redesigned the MERN stack app and learned more about css grid and ui design. This is what came out of it! The website is responsive and the profiles have 3 different formats to fit any device.
 
-* 🔍 filter function by city, language learned or language spoken to find matching tandems 
-* ✏️ possibility to edit your profile and change your personal details
-* :camera: possibility to add a picture
-* :email: possibility to write a message to the tandem you wish to contact, to exchange with them on the application and to see the history of your messages
-
-## How to quickly try it?
-🌞 The project is hosted on Heroku: https://papagei-language-app.herokuapp.com/
-:bulb: If you don't want to go through the sign-up process, you can use the following credentials:
-* Paula // XXXVls!!52
+* ❤️suitable for all devices |
+*  🔍 filter function to find matching tandems | 
+*  ✏️edit profile and add a picture | 
+*  ✉️write messages | 
+*  ⏰ 7 days
 
 ## What it looks like 
 <img src="client\public\landing.png">

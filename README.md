@@ -1,7 +1,7 @@
-## :bird::speech_balloon:PAPAGEI - Tandem App
+## :bird::speech_balloon:PAPAGEI -  MERN application to get into conversation with native speakers
 ### Build with React.js, NodeJS, MongoDB, Cloudinary during Ironhacks bootcamp
 ## The project -->  https://papagei-language-app.herokuapp.com/
-Papagei is a MERN application to get into conversation with native speakers & learn languages together 
+
 After Oriane MAGNIN and I built Papagei during Ironhack Bootcamp using React, Express and MongoDB, I redesigned the MERN stack app and learned more about css grid and ui design. This is what came out of it! The website is responsive and the profiles have 3 different formats to fit any device.
 
 * ❤️suitable for all devices |

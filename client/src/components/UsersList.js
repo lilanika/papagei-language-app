@@ -55,9 +55,9 @@ export default class UsersList extends Component {
     return (
       <div className="max-width-userList">
         <div class=" p-2 "> </div>
-        <div className=" match">
-          {" "}
-          Find your match
+        <div className=" match ">
+     
+         <b> Find your match</b>
           <form className="form filter " onSubmit={this.handleSubmit}>
             <div>
               <select

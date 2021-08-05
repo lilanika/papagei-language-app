@@ -24,13 +24,9 @@ export default function LandingPage(props) {
           <>
             <nav className="navbar">
               <ul>
-                <img
-                  className=" round-img png margin-y"
-                  src="https://img.icons8.com/color/48/000000/parrot.png"
-                  alt=""
-                />{" "}
+              
                 <Link to="/">
-                  <h1>Papagei</h1>
+                <h1>Papagei <span class="primary">.</span></h1>
                 </Link>
               </ul>
               <ul class="nav">

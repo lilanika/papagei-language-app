@@ -34,7 +34,7 @@
   }
 
   a {
-    color: black;
+    color: #313038;
   }
 
   .profile .img-profile {
@@ -107,7 +107,7 @@
   .profile img {
     width: 200px;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 4rem;
   }
 
   /*profile settings*/

@@ -64,8 +64,11 @@ export default class Signup extends Component {
       <section className="container-auth p-2 ">
       <div className="form-group" > 
         <h1 class="large text-primary">Sign Up</h1>
-        <p class="lead"><i class="fas fa-user"></i> Create Your Account</p>
-        <form className="form grid-one auth" onSubmit={this.handleSubmit}>
+        <p class="lead"><i class="fas fa-user p"></i> 
+    <b>Aurel | Password: Aurel123</b> 
+    </p>
+        <form className="form grid-one auth" 
+        onSubmit={this.handleSubmit}>
           <label htmlFor="username"> </label>
           <input
             className="form-group form-text " 

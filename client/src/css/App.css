@@ -5,11 +5,11 @@
   --primary-color:#e6b141;
 
 
-  
+
 
  /*--primary-color:linear-gradient(to right,#313B47,#00C8AA);*/
   --dark-color:  #056d5a;
-  --dark-color:  #221e41;;
+  --dark-color:  #221e41;
   --grey-color: #f5f7fa;
   --light-color: white;
   --card-color: #f5f7fa;
@@ -17,6 +17,7 @@
   --success-color: #28a745;
   --orange-color:  #056d5a;
 }
+
 
 
 
@@ -34,13 +35,15 @@ body {
   line-height: 1.6;
   background-color: var(--card-color); 
   background-color:  rgb(246, 246, 246);
-  color: #221e41;;
+  color: #221e41;
    
 }
 
 a {
+  
+
   color: var(--light-color);
-  color:#221e41;;
+  color:#313038;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bolder;
@@ -52,12 +55,16 @@ ul {
 }
 
 
+.primary {
+  color: var(--primary-color);
+}
+
 
 /*home*/ 
 .match{
   text-align: center;
   padding: 4rem;
-  margin-top:4rem;
+  margin-top:6rem;
   font-weight: bold;
   font-size: 3rem;
 }

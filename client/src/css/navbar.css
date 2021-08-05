@@ -5,18 +5,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 3rem 4rem;
   position: absolute;
   z-index: 1;
   width: 100%;
   top: 0;
   background-color: rgb(246, 246, 246);
+ 
 }
 
 .bg-blue {
   border-radius: 10rem;
   padding: 0.2rem;
   background-color: var(--dark-color);
+
 }
 
 .navbar a {

@@ -43,7 +43,9 @@ export default class Login extends Component {
       <section className="container-auth p-2 " >
       <div>
          <h1 class="large text-primary">Login</h1>
-         <p class="lead"><i class="fas fa-user"></i> Login to Your Account</p>
+         <p class="lead"><i class="fas fa-user p"></i> 
+    <b>Aurel | Password: Aurel123</b> 
+    </p>
         <form class="form grid-one auth" s onSubmit={this.handleSubmit}>
           <label htmlFor="username"></label>
           <input

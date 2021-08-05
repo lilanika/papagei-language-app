@@ -5,7 +5,7 @@
   margin: auto;
   overflow: hidden;
   padding: 2rem 2rem;
-  margin-top: 6rem;
+  margin-top: 8rem;
   margin-bottom: 3rem;
 }
 
@@ -180,7 +180,7 @@
 .btn {
   display: inline-block;
   background: var(--grey-color);
-  color: #221e41;;
+  
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
   border-radius:  4px;

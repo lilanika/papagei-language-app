@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const signup = (username, password, name, nativeLanguages, learningLanguages, location, age, gender, description, goal ) => {
-  console.log('CHECK ERROR PASS', signup)
+  console.log('CHECK EROOR PASS', signup)
   return axios.
     post('/api/auth/signup', {username, password, name, nativeLanguages, learningLanguages, location, age, gender, description, goal })
     .then(response => {

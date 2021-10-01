@@ -101,12 +101,17 @@ app.use('/api', require('./routes/file-upload'));
 // allow access to the API from different domains/origins
 app.use(
   cors({
-    // this could be multiple domains/origins, but we will allow just our React app  origin: ['http://localhost:3000']
-   origin: ['https://papagei-language-app.herokuapp.com/']
+    // this could be multiple domains/origins, but we will allow just our React app  
+
+    origin: process.env.ORIGIN || "http://localhost:3000",
+    //origin: ['http://localhost:3000']
    
   })
+  
 );
 
+
+console.log('cloudinary-works');
 
 
 

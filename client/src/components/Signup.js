@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { signup } from '../services/auth';
 import {Link} from 'react-router-dom';
+import axios from 'axios'; 
 
 
 export default class Signup extends Component {
@@ -27,7 +28,7 @@ export default class Signup extends Component {
    handleNumber = event => {
     let value = event.target.value;
     this.setState({
-        age : value
+        age: value
      })
  }
   handleSubmit = event => {
@@ -40,7 +41,7 @@ export default class Signup extends Component {
             message: user.message,
             username: '',
             password: '',
-            message: '',
+            //message: '',
             name:'',
             nativeLanguages:'',
             learningLanguages: [],
@@ -187,7 +188,7 @@ export default class Signup extends Component {
           />   
           <button  className="btn btn-primary m-2" type="submit">Sign Up</button>
           {this.state.message && (
-            <h3>{this.state.message}</h3>
+            <h3>{this.state.message}</h3> 
           )}
         </form>
         <p class="my-1">

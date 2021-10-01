@@ -46,7 +46,7 @@ const User = require('./models/User.model');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
-//const Message = require('./models/Message.model');
+const Message = require('./models/Message.model');
 
 // we serialize only the `_id` field of the user to keep the information stored minimum
 passport.serializeUser((user, done) => {
@@ -101,8 +101,9 @@ app.use('/api', require('./routes/file-upload'));
 // allow access to the API from different domains/origins
 app.use(
   cors({
-    // this could be multiple domains/origins, but we will allow just our React app
-    origin: ['http://localhost:3000']
+    // this could be multiple domains/origins, but we will allow just our React app  origin: ['http://localhost:3000']
+   origin: ['https://papagei-language-app.herokuapp.com/']
+   
   })
 );
 

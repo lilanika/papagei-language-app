@@ -46,7 +46,7 @@ const User = require('./models/User.model');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
-// const Message = require('./models/Message.model');
+//const Message = require('./models/Message.model');
 
 // we serialize only the `_id` field of the user to keep the information stored minimum
 passport.serializeUser((user, done) => {

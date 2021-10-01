@@ -65,7 +65,7 @@ export default class Signup extends Component {
       <div className="form-group" > 
         <h1 class="large text-primary">Sign Up</h1>
         <p class="lead"><i class="fas fa-user p"></i> 
-    <b>Aurel | Password: Aurel123</b> 
+    <b>Ahmed | Password: Ahmed123</b> 
     </p>
         <form className="form grid-one auth" 
         onSubmit={this.handleSubmit}>
@@ -155,8 +155,7 @@ export default class Signup extends Component {
             value={this.state.age}
             onChange={this.handleNumber}
             id="age"
-            min="16"
-            max="100"
+          
             required 
           />  
           <label htmlFor="gender" className="m-1"></label>
@@ -186,8 +185,7 @@ export default class Signup extends Component {
             id="goal"
             placeholder="Your learning goals... "
           />   
-          <button  className="btn btn-primary m-2" type="submit"> 
-          <h3 >Sign Up</h3></button>
+          <button  className="btn btn-primary m-2" type="submit">Sign Up</button>
           {this.state.message && (
             <h3>{this.state.message}</h3>
           )}
@@ -200,3 +198,6 @@ export default class Signup extends Component {
     )
   }
 }
+
+
+      

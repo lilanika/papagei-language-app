@@ -285,8 +285,9 @@
 
 .bg-light,
 .badge-light {
+  border-radius: 0.5rem;
   border: #fbfbfb;
-  border-radius: 3rem;
+
 }
 
 /* Forms */

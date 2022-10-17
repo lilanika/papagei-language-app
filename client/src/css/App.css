@@ -180,6 +180,7 @@ width: 260px !important;
   justify-content: center;
   text-align: center;
   grid-gap: 1rem;
+  border-radius: 0.5rem;
 }
 
 /* Back To Profiles*/

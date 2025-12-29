@@ -4,11 +4,11 @@
 
 After Oriane MAGNIN and I built Papagei during Ironhack Bootcamp using React, Express and MongoDB, I redesigned the MERN stack app and learned more about css grid and ui design. This is what came out of it! The website is responsive and the profiles have 3 different formats to fit any device.
 
-* ❤️ suitable for all devices |
-* 🔍 filter function to find matching tandems | 
-* ✏️ edit profile and add a picture | 
-* ✉️ write messages | 
-* ⏰ 7 days
+* ❤️ suitable for all devices 
+* 🔍 filter function to find matching tandems 
+* ✏️ edit profile and add a picture 
+* ✉️ write messages 
+* ⏰ 7 days | 2022
 * ⚠️ Please temporarily disable your ad blocker for image uploads
 
 ## What it looks like 
@@ -18,7 +18,7 @@ After Oriane MAGNIN and I built Papagei during Ironhack Bootcamp using React, Ex
 <img src="client\public\papagei-settings.png">
 
 ## Credits
-:raised_hands: Built and designed by  [@lilanika](https://github.com/lilanika) & [@orianemgn](https://github.com/orianemgn/)
+:raised_hands: Built and designed by [@orianemgn](https://github.com/orianemgn/) &  [@lilanika](https://github.com/lilanika)  2022 
 
 
 Papagei logo from [Icones8](https://icones8.fr/icons/set/bird)
